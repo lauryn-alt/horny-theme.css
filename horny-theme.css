@@ -1,0 +1,339 @@
+	:root {
+		/* ==============================
+           COULEURS MODIFIABLES
+        ============================== */
+		--couleur-primaire: #95bb41;
+		--couleur-secondaire: #59663c9c;
+		--couleur-tertiaire: #fff;
+		--couleur-background: #3d442b;
+
+		--couleur-bordure-sombre: #000000d4;
+		--couleur-ombre-blanche: #fff;
+
+		/* ==============================
+           IMAGES MODIFIABLES
+        ============================== */
+		--img-quete: url("https://i.imgur.com/QH5vxV4.png");
+		--img-stock: url("https://i.imgur.com/DdtZpPo.png");
+		--img-loader: url("http://image.noelshack.com/fichiers/2013/50/1386602388-loader1.gif");
+		--img-chat: url("https://i.imgur.com/C34adJd.png");
+		--img-zone-droite: url("https://i.imgur.com/Aygz15c.png");
+		--img-inventaire: url("https://i.imgur.com/FxN9Quz.png");
+		--img-hologramme: url("https://i.imgur.com/P2DGHZy.png");
+
+		/* ==============================
+           EFFETS MODIFIABLES
+        ============================== */
+		--filtre-icones: hue-rotate(240deg);
+		--filtre-fonds: brightness(15%);
+
+		--ombre-neon: 0 0 2px 0 var(--couleur-ombre-blanche),
+		0 0 10px 0 var(--couleur-primaire),
+		2px 2px 5px -1px var(--couleur-primaire),
+		inset 0 0 3px var(--couleur-ombre-blanche),
+		inset 0 0 5px 0 var(--couleur-primaire);
+
+		--police-interface: Geneva, Verdana, sans-serif;
+	}
+
+	/* ==============================
+       FILTRES / RECOLORATION
+    ============================== */
+	#zone_travail .icon,
+	#zone_logement .icon,
+	.stat_icone_soif,
+	.stat_icone_faim,
+	.stat_icone_cr,
+	#zone_travail .btn svg,
+	#infos_menu .book-place.selected .icon,
+	#infos_menu .book-place:hover .icon,
+	#zone_lightBox .lightBox .annuler {
+		filter: var(--filtre-icones);
+	}
+
+	#fondVille1,
+	#fondVille2,
+	#fondVille3,
+	#fondVille4,
+	#fondMaison1,
+	#fondMaison2,
+	#fondMaison3,
+	#fondImmeuble1,
+	#fondImmeuble2,
+	#fondImmeuble3,
+	#fondMort,
+	#fondOI,
+	#fondEntreprise,
+	#fondVide,
+	#fondSouterrain {
+		filter: var(--filtre-fonds) !important;
+	}
+
+	/* ==============================
+       IMAGES D'INTERFACE
+    ============================== */
+	#zone_quete {
+		position: absolute;
+		bottom: -13%;
+		left: 2%;
+		width: 100%;
+		height: 18%;
+		padding: 12% 0 0 49%;
+		box-sizing: border-box;
+
+		background: var(--img-quete) 0 0 / contain no-repeat;
+		color: var(--couleur-primaire) !important;
+
+		line-height: 1.4rem;
+		font-size: min(1.1rem, 14px);
+	}
+
+	#modif_stocks_form {
+		position: absolute;
+		top: -80px;
+		left: 48px;
+		width: 519px;
+		height: 546px;
+
+		background: var(--img-stock) 0 0 no-repeat;
+	}
+
+	#loader {
+		background-image: var(--img-loader) !important;
+	}
+
+	#zone_chat_bg {
+		background: var(--img-chat) !important;
+		background-size: cover !important;
+	}
+
+	#zone_droite > .grid > .grid.top {
+		position: relative;
+		height: 100%;
+		max-height: 100%;
+
+		display: grid;
+		grid-template-columns: 48% 50%;
+		grid-gap: 2%;
+
+		background: var(--img-zone-droite) 0 0 / contain no-repeat;
+	}
+
+	#zone_gauche_inventaire {
+		height: 100%;
+		text-transform: uppercase;
+		font: .7rem Arial, sans-serif;
+
+		background: var(--img-inventaire) 0 0 / contain no-repeat;
+	}
+
+	.hologram img {
+		content: var(--img-hologramme);
+	}
+
+	/* ==============================
+       COULEUR PRIMAIRE
+    ============================== */
+	#zone_fiche #txt_titre,
+	#zone_fiche #statistiques .infostats .max,
+	#ciseauxInventaire,
+	#poubelleInventaire,
+	#statsInventaire,
+	#stockInventaire,
+	#chat_preview .chatContent,
+	#zone_chat .zone_infos,
+	.grid_head_travail_logement .btn.link.infoAide,
+	#zone_messagerie #display_messagerie,
+	#zone_carnet .btnTxt,
+	#zone_messagerie .btnTxt,
+	#zone_carnet .infoAide,
+	#zone_chat #onglets_chat li.selected,
+	#zone_chat .more,
+	#chatForm .text_mode,
+	#lieu_actuel .titre1,
+	.quete_tab.btnTxt,
+	.quete_fleche,
+	.quete_aide,
+	#reward_slot_montant,
+	#annexe_inventaire .valeur,
+	.btnTxt,
+	#zone_travail .type0 {
+		color: var(--couleur-primaire) !important;
+	}
+
+	#zone_carnet .icon svg,
+	#zone_messagerie .icon svg,
+	#zone_fiche #barre_experience svg,
+	#zone_fiche #barre_forme svg,
+	#zone_fiche #barre_sante svg,
+	#zone_fiche #icon_action svg,
+	#zone_fiche #statistiques li svg,
+	#combat_menu div svg,
+	#zone_actions div svg {
+		fill: var(--couleur-primaire);
+	}
+
+	#zone_fiche .barre_inv,
+	#combat_menu > div.active > svg,
+	#zone_actions > div.active > svg,
+	#zone_dataBox .cercle_dashboard .navigation li.selected,
+	#zone_dataBox .cercle_dashboard .navigation li:hover {
+		background: var(--couleur-primaire);
+	}
+
+	#chatForm,
+	#chatForm .text_valider,
+	#chatForm .text_mode,
+	#zone_chat .more,
+	#ciseauxInventaire,
+	#poubelleInventaire,
+	.inventaire_content #statsInventaire,
+	#stockInventaire.selected,
+	#stockInventaire,
+	#combat_menu > div.active > svg,
+	#zone_actions > div.active > svg,
+	.quete_aide,
+	.btnTxt {
+		border: 1px solid var(--couleur-primaire);
+	}
+
+	#zone_fiche #statistiques li > .infos_desc_1,
+	.dataBox .head,
+	#db_group_dashboard {
+		border-right: 1px solid var(--couleur-primaire);
+		border-bottom: 1px solid var(--couleur-primaire);
+		border-left: 1px solid var(--couleur-primaire);
+	}
+
+	#zone_chat .connectes,
+	#zone_chat #onglets_chat {
+		border-bottom: 1px solid var(--couleur-primaire);
+	}
+
+	.case_objet,
+	#zone_messagerie #display_messagerie,
+	#zone_carnet .btnTxt,
+	#zone_messagerie .btnTxt,
+	#zone_carnet .infoAide,
+	#zone_chat #onglets_chat li.selected,
+	.quete_tab.btnTxt,
+	.quete_aide,
+	#db_group_dashboard {
+		box-shadow: var(--ombre-neon);
+	}
+
+	/* ==============================
+       COULEUR SECONDAIRE
+    ============================== */
+	#zone_fiche #statistiques li > .infos_desc_1,
+	#zone_fiche .barre_border .fa-caret-right,
+	.grid_head_travail_logement .btn.link.infoAide,
+	#zone_messagerie #display_messagerie,
+	#zone_carnet .btnTxt,
+	#zone_messagerie .btnTxt,
+	#zone_carnet .infoAide,
+	#zone_chat #onglets_chat li.selected,
+	#zone_chat .more,
+	#chatForm .text_mode,
+	#chatForm .text_valider,
+	#combat_menu div svg,
+	#zone_actions div svg,
+	.quete_tab.btnTxt,
+	.quete_aide,
+	#zone_lightBox .lightBox,
+	#liste_emplois .postes,
+	#zone_dataBox .cercle_dashboard .encart,
+	#zone_dataBox .cercle_dashboard .nav_elts,
+	#zone_dataBox .cercle_dashboard .navigation li,
+	.btnTxt {
+		background: var(--couleur-secondaire);
+	}
+
+	#zone_fiche #txt_credits em {
+		color: var(--couleur-secondaire);
+	}
+
+	.zone_conteneurs_displayed .conteneur .conteneur_content {
+		background-color: var(--couleur-secondaire);
+		border-color: var(--couleur-bordure-sombre);
+	}
+
+	/* ==============================
+       COULEUR TERTIAIRE
+    ============================== */
+	#zone_fiche #statistiques ul > li,
+	#zone_fiche #txt_pseudo,
+	#chatForm .text_valider,
+	#reward_slot_type {
+		color: var(--couleur-tertiaire) !important;
+	}
+
+	span.notif-number {
+		background: var(--couleur-tertiaire);
+	}
+
+	/* ==============================
+       BACKGROUNDS GÉNÉRAUX
+    ============================== */
+	#db_group_dashboard,
+	#db_wages.dataBox.focused.ui-draggable,
+	#db_wages.dataBox.ui-draggable,
+	.dataBox .head {
+		background: var(--couleur-background) !important;
+	}
+	
+	.dataBox.dbtype1 {
+		background: none !important;
+	}
+
+	/* ==============================
+       AJUSTEMENTS DIVERS
+    ============================== */
+	#zone_chat .more,
+	.btnTxt{
+		box-shadow: none;
+	}
+
+	.inventaire_content #statsInventaire {
+		background: none;
+	}
+	
+	#ciseauxInventaire,
+	#poubelleInventaire {
+		width: 7%;
+	}
+	
+	#statsInventaire,
+	#stockInventaire {
+		left: 88% !important;
+	}
+	
+	#zone_fiche #txt_pseudo,
+	#quete_titre_texte {
+		font-family: var(--police-interface);
+		font-size: min(1.5rem);
+	}
+	
+	.dataBox .close, .dataBox .reduce,
+	#db_group_dashboard,
+	#db_wages.dataBox.focused.ui-draggable,
+	#db_wages.dataBox.ui-draggable {
+		box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
+	}
+
+	.quete_aide {
+		top: 15px;
+		left: -90px;
+		margin: 6px 0;
+		padding: 2px 4px;
+
+		font-weight: 700;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	[data-tab="quete_missions"],
+	[data-tab="quete_accomplissements"] {
+		top: 7px;
+		left: -25px;
+	}
