@@ -245,7 +245,8 @@
 	#zone_dataBox .cercle_dashboard .encart,
 	#zone_dataBox .cercle_dashboard .nav_elts,
 	#zone_dataBox .cercle_dashboard .navigation li,
-	.btnTxt {
+	.btnTxt,
+	#stockInventaire.selected {
 		background: var(--couleur-secondaire);
 	}
 
