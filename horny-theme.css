@@ -282,6 +282,7 @@
 		background: var(--couleur-background) !important;
 	}
 	
+	.inventaire_content #statsInventaire,
 	.dataBox.dbtype1,
 	#stockInventaire.selected {
 		background: none !important;
@@ -293,10 +294,6 @@
 	#zone_chat .more,
 	.btnTxt{
 		box-shadow: none;
-	}
-
-	.inventaire_content #statsInventaire {
-		background: none;
 	}
 	
 	#ciseauxInventaire,
