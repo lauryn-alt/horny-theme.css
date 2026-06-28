@@ -245,8 +245,7 @@
 	#zone_dataBox .cercle_dashboard .encart,
 	#zone_dataBox .cercle_dashboard .nav_elts,
 	#zone_dataBox .cercle_dashboard .navigation li,
-	.btnTxt,
-	#stockInventaire.selected {
+	.btnTxt {
 		background: var(--couleur-secondaire);
 	}
 
@@ -283,7 +282,8 @@
 		background: var(--couleur-background) !important;
 	}
 	
-	.dataBox.dbtype1 {
+	.dataBox.dbtype1,
+	#stockInventaire.selected {
 		background: none !important;
 	}
 
