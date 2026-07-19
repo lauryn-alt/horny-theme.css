@@ -66,7 +66,9 @@
 	form div.sujet .left,
 	#critere_selection td.selected,
 	#critere_selection td:hover,
-	#acc_groupe_1 {
+	#acc_groupe_1,
+	#atelier_form .retour,
+	#atelier_form .valider.link {
 	    filter: var(--filtre-icones);
 	}
 
@@ -147,6 +149,10 @@
 
 	#liste_stocks .stock {
 		background: url(https://i.imgur.com/Oj3vEKj.png) 0 0 no-repeat;
+	}
+
+	#atelier_form {
+		background: url(https://i.imgur.com/0emEAAm.png) 0 0 no-repeat;
 	}
 
 	/* ==============================
