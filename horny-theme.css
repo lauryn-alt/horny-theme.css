@@ -335,3 +335,9 @@
 		top: 7px;
 		left: -25px;
 	}
+
+	#combat_menu > div:hover > svg,
+	#zone_actions > div:hover > svg {
+    border: 1px solid #fff !important;
+    background: #E3E3E3 !important;
+	}
