@@ -64,7 +64,9 @@
 	#infos_menu .book-place:hover .icon,
 	#zone_lightBox .lightBox .annuler,
 	form div.cible .left,
-	form div.sujet .left {
+	form div.sujet .left,
+	#critere_selection td.selected,
+	#critere_selection td:hover{
 	    filter: var(--filtre-icones);
 	}
 
