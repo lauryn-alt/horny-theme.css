@@ -53,7 +53,6 @@
 	#zone_logement .icon,
 	#zone_chat .icon,
 	#critere_selection .taille1,
-	#liste_stocks .stock,
 	form .counter,
 	form .bigValidInput,
 	.stat_icone_soif,
@@ -68,6 +67,10 @@
 	#critere_selection td.selected,
 	#critere_selection td:hover{
 	    filter: var(--filtre-icones);
+	}
+
+	#liste_stocks .stock {
+		background-filter: var(--filtre-icones);
 	}
 
 	#fondVille1,
