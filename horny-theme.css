@@ -136,6 +136,19 @@
 	/* ==============================
        COULEUR PRIMAIRE
     ============================== */
+	#zone_carnet .btnTxt.selected,
+	#zone_carnet .btnTxt:hover,
+	#zone_carnet .infoAide:hover,
+	#zone_messagerie .btnTxt.selected,
+	#zone_messagerie .btnTxt:hover,
+	#zone_messagerie #display_messagerie:hover,
+	#zone_messagerie #display_messagerie.selected,
+	#zone_carnet .infoAide:hover {
+    background: var(--couleur-primaire) !important;
+    color: var(--couleur-background) !important;
+	box-shadow: var(--couleur-background) !important;
+	}
+
 	#zone_fiche #txt_titre,
 	#zone_fiche #statistiques .infostats .max,
 	#ciseauxInventaire,
@@ -161,18 +174,6 @@
 	.btnTxt,
 	#zone_travail .type0 {
 		color: var(--couleur-primaire) !important;
-	}
-
-	#zone_carnet .btnTxt.selected,
-	#zone_carnet .btnTxt:hover,
-	#zone_carnet .infoAide:hover,
-	#zone_messagerie .btnTxt.selected,
-	#zone_messagerie .btnTxt:hover,
-	#zone_messagerie #display_messagerie:hover,
-	#zone_messagerie #display_messagerie.selected,
-	#zone_carnet > .btn.add:hover {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
 	}
 
 	#zone_carnet .icon svg,
