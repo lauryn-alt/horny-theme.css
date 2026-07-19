@@ -207,6 +207,11 @@
 		border-left: 1px solid var(--couleur-primaire);
 	}
 
+	.dataBox .reduce:hover {
+    background-color: var(--couleur-background) !important;
+    box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
+	}
+
 	#zone_chat .connectes,
 	#zone_chat #onglets_chat {
 		border-bottom: 1px solid var(--couleur-primaire);
