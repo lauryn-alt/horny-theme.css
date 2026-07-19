@@ -33,6 +33,12 @@
 		inset 0 0 3px var(--couleur-ombre-blanche),
 		inset 0 0 5px 0 var(--couleur-primaire);
 
+		--ombre-neon-sombre: 0 0 2px 0 var(--couleur-ombre-blanche),
+		0 0 10px 0 var(--couleur-background),
+		2px 2px 5px -1px var(--couleur-background),
+		inset 0 0 3px var(--couleur-ombre-blanche),
+		inset 0 0 5px 0 var(--couleur-background);
+
 		--police-interface: Geneva, Verdana, sans-serif;
 	}
 
@@ -146,7 +152,7 @@
 	#zone_carnet .infoAide:hover {
     background: var(--couleur-primaire) !important;
     color: var(--couleur-background) !important;
-	box-shadow: var(--couleur-background) !important;
+	box-shadow: var(--ombre-neon-sombre) !important;
 	}
 
 	#zone_fiche #txt_titre,
@@ -239,7 +245,7 @@
 	.quete_tab.btnTxt,
 	.quete_aide,
 	#db_group_dashboard {
-		box-shadow: var(--ombre-neon);
+		box-shadow: var(--);
 	}
 
 	.btn_message_gradient {
