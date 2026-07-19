@@ -65,7 +65,10 @@
 	form div.cible .left,
 	form div.sujet .left,
 	#critere_selection td.selected,
-	#critere_selection td:hover{
+	#critere_selection td:hover,
+	#acc_groupe_1,
+	#acc_carte_drag .accomp.link,
+	#acc_carte_drag .gv_cercle {
 	    filter: var(--filtre-icones);
 	}
 
@@ -296,6 +299,24 @@
 	.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
+	}
+
+	.btnTxt[id*="nm_edit_description_"]:hover {
+		background: var(--couleur-background) !important;
+		color: var(--couleur-primaire) !important;
+	}
+
+	.grid_head_travail_logement .btn.link.infoAide.select,
+	.grid_head_travail_logement .btn.link.infoAide:hover {
+		background: var(--couleur-background) !important;
+		color: var(--couleur-primaire) !important;
+	}
+
+	#acc_carte_content {
+		background: var(--couleur-background) !important;
+		box-shadow:
+			15px 15px 75px inset var(--couleur-primaire),
+			-15px -15px 75px inset var(--couleur-primaire) !important;
 	}
 
 	/* ==============================
