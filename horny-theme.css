@@ -69,7 +69,6 @@
 	#acc_groupe_1,
 	#atelier_form .retour,
 	#atelier_form .valider.link,
-	#zone_rewardBox .header,
 	#zone_rewardBox .footer .close,
 	form .mediumSelectInput .right, {
 	    filter: var(--filtre-icones) !important;
@@ -156,6 +155,17 @@
 
 	#atelier_form {
 		background: url(https://i.imgur.com/0emEAAm.png) 0 0 no-repeat;
+	}
+	#zone_rewardBox .header {
+		background: url(https://i.imgur.com/nNgtHYB.png) 0 0 no-repeat;
+	}
+
+	#zone_rewardBox .main {
+		background: url(https://i.imgur.com/nNgtHYB.png) -870px 0 repeat-y;
+	}
+
+	#zone_rewardBox .footer {
+		background: url(https://i.imgur.com/nNgtHYB.png) -435px 0 no-repeat;
 	}
 
 	/* ==============================
