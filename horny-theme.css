@@ -262,12 +262,6 @@
     background-color: var(--couleur-secondaire) !important;
 	}
 
-	.content:has(> form.message_nouveau) {
-    background-color: var(--couleur-secondaire);
-    box-shadow:
-        inset 0 0 8px var(--couleur-primaire);
-	}
-
 	/* ==============================
        COULEUR TERTIAIRE
     ============================== */
@@ -290,6 +284,12 @@
 	#db_wages.dataBox.ui-draggable,
 	.dataBox .head {
 		background: var(--couleur-background) !important;
+	}
+
+	.content:has(> form.message_nouveau) {
+    background-color: var(--couleur-background);
+    box-shadow:
+        inset 0 0 8px var(--couleur-primaire);
 	}
 	
 	.inventaire_content #statsInventaire,
