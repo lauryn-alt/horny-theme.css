@@ -254,9 +254,18 @@
 	}
 
 	.btn_message_gradient {
-    box-shadow: none !important;
-    background: var(--couleur-primaire) !important;
-    border: 1px solid var(--couleur-primaire) !important;
+    	box-shadow: none !important;
+    	background: var(--couleur-primaire) !important;
+    	border: 1px solid var(--couleur-primaire) !important;
+	}
+
+	#dc-carnet-agenda-panel-v140 {
+		background: #1c1c1c !important;
+		border: 1px solid var(--couleur-primaire);
+	}
+
+	#dc-carnet-agenda-panel-v140 .dc-agenda-day {
+		border: 1px solid var(--couleur-primaire);
 	}
 
 	/* ==============================
@@ -340,7 +349,16 @@
 	}
 
 	.dataBox .message_nouveau .envoyer:hover {
-    background: var(--couleur-background) !important;
+    	background: var(--couleur-background) !important;
+	}
+
+	#dc-carnet-agenda-panel-v140 button {
+		border: 1px solid var(--couleur-primaire);
+		background: var--couleur-background);
+	}
+
+	#dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
+		background: rgb(255 255 255 / 11%);
 	}
 
 	/* ==============================
