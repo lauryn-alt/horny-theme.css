@@ -440,7 +440,8 @@
     	background: var(--couleur-background) !important;
 	}
 
-	form .mediumSelectInputOptions {
+	form .mediumSelectInputOptions,
+	.case_objet.linkBox::before, .case_objet.linkBox::after, .case_objet.linkBox:hover::before, .case_objet.linkBox:hover::after {
 			bakcground: var(--couleur-background) !important;
 	}
 
