@@ -71,15 +71,7 @@
 	#atelier_form .valider.link,
 	#zone_rewardBox .header,
 	#zone_rewardBox .footer .close,
-	#zone_informations_lieu #acheter_habitation,
-	#louer_habitation,
-	#critere_selection .taille2,
-	form .mediumSelectInput .right,
-	#liste_stocks .acheter,
-	#liste_stocks .icon_digicode,
-	#liste_stocks .icon_camera,
-	#liste_stocks .icon_renforcement;
-	#liste_stocks .icon_etat.etat3 {
+	form .mediumSelectInput .right, {
 	    filter: var(--filtre-icones) !important;
 	}
 
