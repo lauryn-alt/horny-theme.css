@@ -250,7 +250,7 @@
 	.quete_aide,
 	#db_group_dashboard,
 	#dc-carnet-agenda-button-v140 {
-		box-shadow: var(--ombre-neon);
+		box-shadow: var(--ombre-neon) !important;
 	}
 
 	.btn_message_gradient {
