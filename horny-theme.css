@@ -68,7 +68,9 @@
 	#critere_selection td:hover,
 	#acc_groupe_1,
 	#atelier_form .retour,
-	#atelier_form .valider.link {
+	#atelier_form .valider.link,
+	#zone_rewardBox .header,
+	#zone_rewardBox .footer .close {
 	    filter: var(--filtre-icones);
 	}
 
