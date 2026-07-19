@@ -51,6 +51,11 @@
 
 	#zone_travail .icon,
 	#zone_logement .icon,
+	#zone_chat .icon,
+	#critere_selection .taille1,
+	#liste_stocks .stock,
+	form .counter,
+	form .bigValidInput,
 	.stat_icone_soif,
 	.stat_icone_faim,
 	.stat_icone_cr,
@@ -271,6 +276,21 @@
 	#dc-carnet-agenda-modal-v140 select,
 	#dc-carnet-agenda-modal-v140 textarea {
 		border: 1px solid var(--couleur-primaire);
+	}
+
+	#consulter_compte:hover,
+	#creer_compte:hover,
+	#fermer_compte:hover {
+		background: var(--couleur-primaire) !important;
+		color: var(--couleur-background) !important;
+	}
+
+	.btnTxt[onclick*="changeMenu(this, '#resume_compte');"]:hover,
+	.btnTxt[onclick*="changeMenu(this, '#inventaire_compte');"]:hover,
+	.btnTxt[onclick*="changeMenu(this, '#credits_compte');"]:hover,
+	.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover {
+		background: var(--couleur-primaire) !important;
+		color: var(--couleur-background) !important;
 	}
 
 	/* ==============================
