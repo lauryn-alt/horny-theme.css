@@ -163,6 +163,16 @@
 		color: var(--couleur-primaire) !important;
 	}
 
+	#zone_carnet .btnTxt.selected,
+	#zone_carnet .btnTxt:hover,
+	#zone_carnet .infoAide:hover,
+	#zone_messagerie .btnTxt.selected,
+	#zone_messagerie .btnTxt:hover,
+	#zone_carnet > .btn.add {
+    background: var(--couleur-primaire) !important;
+    color: var(--couleur-background) !important;
+	}
+
 	#zone_carnet .icon svg,
 	#zone_messagerie .icon svg,
 	#zone_fiche #barre_experience svg,
@@ -309,6 +319,10 @@
 	.dataBox.dbtype1,
 	#stockInventaire.selected {
 		background: none !important;
+	}
+
+	.dataBox .message_nouveau .envoyer:hover {
+    background: var(--couleur-background) !important;
 	}
 
 	/* ==============================
