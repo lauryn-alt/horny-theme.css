@@ -70,7 +70,7 @@
 	#atelier_form .retour,
 	#atelier_form .valider.link,
 	#zone_rewardBox .footer .close,
-	form .mediumSelectInput .right, {
+	form .mediumSelectInput .right {
 	    filter: var(--filtre-icones) !important;
 	}
 
@@ -214,7 +214,8 @@
 	#dc-carnet-agenda-button-v140,
 	#acc_actuel .precision,
 	#liste_stocks .infos_batiment .nom,
-	#liste_stocks .stock table .type1, #liste_stocks_custom .stock table .type1 {
+	#liste_stocks .stock table .type1, #liste_stocks_custom .stock table .type1,
+	#zone_rewardBox .small .data1 {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -452,6 +453,11 @@
 
 	form .mediumSelectInputOptions {
 			bakcground: var(--couleur-background) !important;
+	}
+
+	#zone_rewardBox .label,
+	#zone_rewardBox .competences {
+		background: none;
 	}
 
 	/* ==============================
