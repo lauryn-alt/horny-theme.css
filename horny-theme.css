@@ -390,6 +390,13 @@
 		background: rgb(255 255 255 / 11%);
 	}
 
+	.dataBox .content:has(.aide_info.article_100),
+	.dataBox .content:has(.aide_info[class*="article_"]),
+	.dataBox .content:has(.aide_info.aide_admin),
+	.dataBox .content:has(.aide_info.aide_credits) {
+    	background: var(--couleur-background) !important;
+	}
+
 	/* ==============================
        AJUSTEMENTS DIVERS
     ============================== */
