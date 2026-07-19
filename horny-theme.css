@@ -66,8 +66,7 @@
 	form div.sujet .left,
 	#critere_selection td.selected,
 	#critere_selection td:hover,
-	#acc_groupe_1,
-	#acc_carte_drag .gv_cercle {
+	#acc_groupe_1 {
 	    filter: var(--filtre-icones);
 	}
 
@@ -319,7 +318,7 @@
 	}
 
 	#acc_carte {
-		box-shadow: 0 0 10px -1px var(--couleur-primaire);
+		box-shadow: 0 0 10px -1px var(--couleur-primaire) !important;
 	}
 
 	/* ==============================
