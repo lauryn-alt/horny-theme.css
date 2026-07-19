@@ -70,7 +70,23 @@
 	}
 
 	#liste_stocks .stock {
-		background-filter: var(--filtre-icones);
+    	position: relative;
+    	background: none !important;
+	}
+
+	#liste_stocks .stock::before {
+    	content: "";
+    	position: absolute;
+    	inset: 0;
+    	background: url(../../../images/fr/design/fond_objet_stock.png) 0 0 no-repeat;
+    	filter: var(--filtre-icones);
+    	pointer-events: none;
+    	z-index: 0;
+	}
+
+	#liste_stocks .stock > * {
+    	position: relative;
+    	z-index: 1;
 	}
 
 	#fondVille1,
