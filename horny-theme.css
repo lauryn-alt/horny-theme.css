@@ -194,7 +194,7 @@
 	#zone_actions > div.active > svg,
 	.quete_aide,
 	.btnTxt {
-		border: 1px solid var(--couleur-primaire);
+		border: 1px solid var(--couleur-primaire) !important;
 	}
 
 	#zone_fiche #statistiques li > .infos_desc_1,
