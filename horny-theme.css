@@ -259,12 +259,17 @@
     	border: 1px solid var(--couleur-primaire) !important;
 	}
 
-	#dc-carnet-agenda-panel-v140 {
+	#dc-carnet-agenda-panel-v140, #dc-carnet-agenda-modal-v140 .dc-agenda-modal-box, #dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box {
 		background: #1c1c1c !important;
 		border: 1px solid var(--couleur-primaire);
 	}
 
-	#dc-carnet-agenda-panel-v140 .dc-agenda-day {
+	#dc-carnet-agenda-panel-v140 .dc-agenda-day,
+	#dc-carnet-agenda-modal-v140 input[type="text"],
+	#dc-carnet-agenda-modal-v140 input[type="date"],
+	#dc-carnet-agenda-modal-v140 input[type="time"],
+	#dc-carnet-agenda-modal-v140 select,
+	#dc-carnet-agenda-modal-v140 textarea {
 		border: 1px solid var(--couleur-primaire);
 	}
 
@@ -306,7 +311,7 @@
 	}
 
 	button.text_valider.transition3s {
-    background-color: var(--couleur-secondaire) !important;
+    	background-color: var(--couleur-secondaire) !important;
 	}
 
 	/* ==============================
@@ -354,7 +359,7 @@
 
 	#dc-carnet-agenda-panel-v140 button {
 		border: 1px solid var(--couleur-primaire);
-		background: var--couleur-background);
+		background: var(--couleur-background);
 	}
 
 	#dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
