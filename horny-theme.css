@@ -80,7 +80,7 @@
 	#liste_stocks .icon_camera,
 	#liste_stocks .icon_renforcement;
 	#liste_stocks .icon_etat.etat3 {
-	    filter: var(--filtre-icones);
+	    filter: var(--filtre-icones) !important;
 	}
 
 	#fondVille1,
