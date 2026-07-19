@@ -144,6 +144,10 @@
 		content: var(--img-hologramme);
 	}
 
+	#liste_stocks .stock {
+		background: url(https://i.imgur.com/Oj3vEKj.png) 0 0 no-repeat;
+	}
+
 	/* ==============================
        COULEUR PRIMAIRE
     ============================== */
