@@ -207,7 +207,7 @@
 		border-left: 1px solid var(--couleur-primaire);
 	}
 
-	.dataBox .reduce:hover {
+	.dataBox .close, .dataBox .reduce {
     background-color: var(--couleur-background) !important;
     box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
 	}
