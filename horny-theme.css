@@ -248,7 +248,8 @@
 	#zone_chat #onglets_chat li.selected,
 	.quete_tab.btnTxt,
 	.quete_aide,
-	#db_group_dashboard {
+	#db_group_dashboard,
+	#dc-carnet-agenda-button-v140 {
 		box-shadow: var(--ombre-neon);
 	}
 
@@ -321,7 +322,8 @@
 	#db_group_dashboard,
 	#db_wages.dataBox.focused.ui-draggable,
 	#db_wages.dataBox.ui-draggable,
-	.dataBox .head {
+	.dataBox .head,
+	#dc-carnet-agenda-button-v140 {
 		background: var(--couleur-background) !important;
 	}
 
