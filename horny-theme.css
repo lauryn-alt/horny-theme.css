@@ -47,8 +47,10 @@
 	#zone_travail .btn svg,
 	#infos_menu .book-place.selected .icon,
 	#infos_menu .book-place:hover .icon,
-	#zone_lightBox .lightBox .annuler {
-		filter: var(--filtre-icones);
+	#zone_lightBox .lightBox .annuler,
+	form div.cible .left,
+	form div.sujet .left {
+	    filter: var(--filtre-icones);
 	}
 
 	#fondVille1,
@@ -220,6 +222,12 @@
 	.quete_aide,
 	#db_group_dashboard {
 		box-shadow: var(--ombre-neon);
+	}
+
+	.btn_message_gradient {
+    box-shadow: none !important;
+    background: var(--couleur-primaire) !important;
+    border: 1px solid var(--couleur-primaire) !important;
 	}
 
 	/* ==============================
