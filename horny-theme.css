@@ -70,7 +70,16 @@
 	#atelier_form .retour,
 	#atelier_form .valider.link,
 	#zone_rewardBox .header,
-	#zone_rewardBox .footer .close {
+	#zone_rewardBox .footer .close,
+	#acheter_habitation,
+	#louer_habitation,
+	#critere_selection .taille2,
+	form .mediumSelectInput .right,
+	#liste_stocks .acheter,
+	#liste_stocks .icon_digicode,
+	#liste_stocks .icon_camera,
+	#liste_stocks .icon_renforcement;
+	#liste_stocks .icon_etat.etat3 {
 	    filter: var(--filtre-icones);
 	}
 
@@ -201,7 +210,9 @@
 	.btnTxt,
 	#zone_travail .type0,
 	#dc-carnet-agenda-button-v140,
-	#acc_actuel .precision{
+	#acc_actuel .precision,
+	#liste_stocks .infos_batiment .nom,
+	#liste_stocks .stock table .type1, #liste_stocks_custom .stock table .type1 {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -435,6 +446,10 @@
 	.dataBox .content:has(.aide_info.aide_admin),
 	.dataBox .content:has(.aide_info.aide_credits) {
     	background: var(--couleur-background) !important;
+	}
+
+	form .mediumSelectInputOptions {
+			bakcground: var(--couleur-background) !important;
 	}
 
 	/* ==============================
