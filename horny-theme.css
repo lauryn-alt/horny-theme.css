@@ -168,7 +168,9 @@
 	#zone_carnet .infoAide:hover,
 	#zone_messagerie .btnTxt.selected,
 	#zone_messagerie .btnTxt:hover,
-	#zone_carnet > .btn.add {
+	#zone_messagerie #display_messagerie:hover,
+	#zone_messagerie #display_messagerie.selected,
+	#zone_carnet > .btn.add:hover {
     background: var(--couleur-primaire) !important;
     color: var(--couleur-background) !important;
 	}
