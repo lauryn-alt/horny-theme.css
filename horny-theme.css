@@ -2,6 +2,7 @@
 		/* ==============================
            COULEURS MODIFIABLES
         ============================== */
+		
 		--couleur-primaire: #95bb41;
 		--couleur-secondaire: #59663c9c;
 		--couleur-tertiaire: #fff;
@@ -13,6 +14,7 @@
 		/* ==============================
            IMAGES MODIFIABLES
         ============================== */
+
 		--img-quete: url("https://i.imgur.com/QH5vxV4.png");
 		--img-stock: url("https://i.imgur.com/DdtZpPo.png");
 		--img-loader: url("http://image.noelshack.com/fichiers/2013/50/1386602388-loader1.gif");
@@ -24,6 +26,7 @@
 		/* ==============================
            EFFETS MODIFIABLES
         ============================== */
+
 		--filtre-icones: hue-rotate(240deg);
 		--filtre-fonds: brightness(15%);
 
@@ -45,6 +48,7 @@
 	/* ==============================
        FILTRES / RECOLORATION
     ============================== */
+
 	#zone_travail .icon,
 	#zone_logement .icon,
 	.stat_icone_soif,
@@ -80,6 +84,7 @@
 	/* ==============================
        IMAGES D'INTERFACE
     ============================== */
+
 	#zone_quete {
 		position: absolute;
 		bottom: -13%;
@@ -88,10 +93,8 @@
 		height: 18%;
 		padding: 12% 0 0 49%;
 		box-sizing: border-box;
-
 		background: var(--img-quete) 0 0 / contain no-repeat;
 		color: var(--couleur-primaire) !important;
-
 		line-height: 1.4rem;
 		font-size: min(1.1rem, 14px);
 	}
@@ -102,7 +105,6 @@
 		left: 48px;
 		width: 519px;
 		height: 546px;
-
 		background: var(--img-stock) 0 0 no-repeat;
 	}
 
@@ -119,11 +121,9 @@
 		position: relative;
 		height: 100%;
 		max-height: 100%;
-
 		display: grid;
 		grid-template-columns: 48% 50%;
 		grid-gap: 2%;
-
 		background: var(--img-zone-droite) 0 0 / contain no-repeat;
 	}
 
@@ -131,7 +131,6 @@
 		height: 100%;
 		text-transform: uppercase;
 		font: .7rem Arial, sans-serif;
-
 		background: var(--img-inventaire) 0 0 / contain no-repeat;
 	}
 
@@ -142,6 +141,7 @@
 	/* ==============================
        COULEUR PRIMAIRE
     ============================== */
+
 	#zone_carnet .btnTxt.selected,
 	#zone_carnet .btnTxt:hover,
 	#zone_carnet .infoAide:hover,
@@ -217,7 +217,8 @@
 	#combat_menu > div.active > svg,
 	#zone_actions > div.active > svg,
 	.quete_aide,
-	.btnTxt, #zone_carnet .infoAide {
+	.btnTxt,
+	#zone_carnet .infoAide {
 		border: 1px solid var(--couleur-primaire) !important;
 	}
 
@@ -248,7 +249,7 @@
 	.quete_tab.btnTxt,
 	.quete_aide,
 	#db_group_dashboard {
-		box-shadow: var(--);
+		box-shadow: var(--ombre-neon);
 	}
 
 	.btn_message_gradient {
@@ -260,6 +261,7 @@
 	/* ==============================
        COULEUR SECONDAIRE
     ============================== */
+
 	#zone_fiche #statistiques li > .infos_desc_1,
 	#zone_fiche .barre_border .fa-caret-right,
 	.grid_head_travail_logement .btn.link.infoAide,
@@ -300,6 +302,7 @@
 	/* ==============================
        COULEUR TERTIAIRE
     ============================== */
+
 	#zone_fiche #statistiques ul > li,
 	#zone_fiche #txt_pseudo,
 	#chatForm .text_valider,
@@ -314,6 +317,7 @@
 	/* ==============================
        BACKGROUNDS GÉNÉRAUX
     ============================== */
+
 	#db_group_dashboard,
 	#db_wages.dataBox.focused.ui-draggable,
 	#db_wages.dataBox.ui-draggable,
@@ -326,7 +330,7 @@
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
 	}
-	
+
 	.inventaire_content #statsInventaire,
 	.dataBox.dbtype1,
 	#stockInventaire.selected {
@@ -340,27 +344,28 @@
 	/* ==============================
        AJUSTEMENTS DIVERS
     ============================== */
+
 	#zone_chat .more,
 	.btnTxt{
 		box-shadow: none;
 	}
-	
+
 	#ciseauxInventaire,
 	#poubelleInventaire {
 		width: 7%;
 	}
-	
+
 	#statsInventaire,
 	#stockInventaire {
 		left: 88% !important;
 	}
-	
+
 	#zone_fiche #txt_pseudo,
 	#quete_titre_texte {
 		font-family: var(--police-interface);
 		font-size: min(1.5rem);
 	}
-	
+
 	.dataBox .close, .dataBox .reduce,
 	#db_group_dashboard,
 	#db_wages.dataBox.focused.ui-draggable,
@@ -373,7 +378,6 @@
 		left: -90px;
 		margin: 6px 0;
 		padding: 2px 4px;
-
 		font-weight: 700;
 		text-align: center;
 		cursor: pointer;
