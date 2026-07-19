@@ -192,7 +192,8 @@
 	#annexe_inventaire .valeur,
 	.btnTxt,
 	#zone_travail .type0,
-	#dc-carnet-agenda-button-v140 {
+	#dc-carnet-agenda-button-v140,
+	#acc_actuel .precision{
 		color: var(--couleur-primaire) !important;
 	}
 
