@@ -71,7 +71,7 @@
 	#atelier_form .valider.link,
 	#zone_rewardBox .header,
 	#zone_rewardBox .footer .close,
-	#acheter_habitation,
+	#zone_informations_lieu #acheter_habitation,
 	#louer_habitation,
 	#critere_selection .taille2,
 	form .mediumSelectInput .right,
