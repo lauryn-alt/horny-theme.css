@@ -357,7 +357,9 @@
     	background: var(--couleur-background) !important;
 	}
 
-	#dc-carnet-agenda-panel-v140 button {
+	#dc-carnet-agenda-panel-v140 button,
+	#dc-carnet-agenda-modal-v140 button,
+	#dc-carnet-agenda-day-modal-v140 button {
 		border: 1px solid var(--couleur-primaire);
 		background: var(--couleur-background);
 	}
