@@ -262,7 +262,7 @@
     background-color: var(--couleur-secondaire) !important;
 	}
 
-	.content:has(form.message_nouveau) {
+	.content:has(> form.message_nouveau) {
     background-color: var(--couleur-secondaire);
     box-shadow:
         inset 0 0 3px var(--couleur-ombre-blanche),
