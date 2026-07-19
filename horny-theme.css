@@ -149,7 +149,9 @@
 	#zone_messagerie .btnTxt:hover,
 	#zone_messagerie #display_messagerie:hover,
 	#zone_messagerie #display_messagerie.selected,
-	#zone_carnet .infoAide:hover {
+	#zone_carnet .infoAide:hover,
+	#dc-carnet-agenda-button-v140:hover,
+	#dc-carnet-agenda-button-v140.selected {
     background: var(--couleur-primaire) !important;
     color: var(--couleur-background) !important;
 	box-shadow: var(--ombre-neon-sombre) !important;
@@ -178,7 +180,8 @@
 	#reward_slot_montant,
 	#annexe_inventaire .valeur,
 	.btnTxt,
-	#zone_travail .type0 {
+	#zone_travail .type0,
+	#dc-carnet-agenda-button-v140 {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -214,7 +217,7 @@
 	#combat_menu > div.active > svg,
 	#zone_actions > div.active > svg,
 	.quete_aide,
-	.btnTxt {
+	.btnTxt, #zone_carnet .infoAide {
 		border: 1px solid var(--couleur-primaire) !important;
 	}
 
