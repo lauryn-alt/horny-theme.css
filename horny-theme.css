@@ -318,7 +318,7 @@
 	}
 
 	#acc_carte {
-		box-shadow: 0 0 10px -1px var(--couleur-primaire) !important;
+		box-shadow: none !important;
 	}
 
 	/* ==============================
