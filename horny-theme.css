@@ -354,6 +354,8 @@
 	#stockInventaire.hover, #stockInventaire:hover, #stockInventaire.selected, 
 	#ciseauxInventaire.hover, #ciseauxInventaire.selected, #ciseauxInventaire:hover, 
 	#poubelleInventaire.hover, #poubelleInventaire:hover, #poubelleInventaire.selected,
+	#statsInventaire.hover, #statsInventaire:hover, #statsInventaire.selected,
+	#stockInventaire.hover, #stockInventaire:hover, #stockInventaire.selected,
 	#visiofwi_open:hover, #visiofwi_open.selected {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
