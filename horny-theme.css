@@ -541,7 +541,7 @@
 		color: #fff;
 	}
 
-	.dataBox:has(.message) {
+	#db_message_ {
 		background: var(--couleur-background);
 		box-shadow: inset 0 0 25px 10px var(--couleur-primaire);
 	}
