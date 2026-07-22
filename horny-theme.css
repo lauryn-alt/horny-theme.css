@@ -460,6 +460,11 @@
 		background: none;
 	}
 
+	#zone_fiche #statistiques li .infos {
+		background: var(--couleur-background);
+		border: 1px solid var(--couleur-primaire);
+	}
+
 	/* ==============================
        AJUSTEMENTS DIVERS
     ============================== */
