@@ -357,7 +357,6 @@
 	#ciseauxInventaire.hover, #ciseauxInventaire.selected, #ciseauxInventaire:hover, 
 	#poubelleInventaire.hover, #poubelleInventaire:hover, #poubelleInventaire.selected,
 	#statsInventaire.hover, #statsInventaire:hover, #statsInventaire.selected,
-	#stockInventaire.hover, #stockInventaire:hover, #stockInventaire.selected,
 	#visiofwi_open:hover, #visiofwi_open.selected {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
@@ -467,7 +466,7 @@
 	}
 
 	form .mediumSelectInputOptions {
-			bakcground: var(--couleur-background) !important;
+			background: var(--couleur-background) !important;
 	}
 
 	#zone_rewardBox .label,
@@ -502,7 +501,7 @@
 	#zone_fiche #txt_pseudo,
 	#quete_titre_texte {
 		font-family: var(--police-interface);
-		font-size: min(1.5rem);
+		font-size: 1.5rem;
 	}
 
 	.dataBox .close, .dataBox .reduce,
