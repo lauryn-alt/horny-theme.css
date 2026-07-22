@@ -217,7 +217,8 @@
 	#liste_stocks .infos_batiment .nom,
 	#liste_stocks .stock table .type1, #liste_stocks_custom .stock table .type1,
 	#zone_rewardBox .small .data1,
-	.dataBox .aide_content h2 {
+	.dataBox .aide_content h2,
+	.dataBox .message .zone_conversation .conversation .ligne2,{
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -479,6 +480,11 @@
 		border: 1px solid var(--couleur-primaire);
 	}
 
+	.dataBox:has(.message) {
+		background: var(--couleur-background);
+		box-shadow: inset 0 0 25px 10px var(--couleur-primaire);
+	}
+
 	/* ==============================
        AJUSTEMENTS DIVERS
     ============================== */
@@ -525,6 +531,14 @@
 	[data-tab="quete_accomplissements"] {
 		top: 7px;
 		left: -25px;
+	}
+
+	.dataBox .message .contenu, .dataBox .message .zone_conversation .conversation.selected, .dataBox .message .zone_conversation .conversation:hover {
+		bakcground: rgb(0 0 0 / 30%);
+	}
+
+	.dataBox .message .zone_conversation .conversation .ligne1 {
+		color: #fff;
 	}
 
 	#combat_menu > div:hover > svg,
