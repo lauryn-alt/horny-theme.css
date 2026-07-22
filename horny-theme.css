@@ -193,6 +193,7 @@
 	#poubelleInventaire,
 	#statsInventaire,
 	#stockInventaire,
+	#visiofwi_open,
 	#chat_preview .chatContent,
 	#zone_chat .zone_infos,
 	.grid_head_travail_logement .btn.link.infoAide,
@@ -245,6 +246,7 @@
 	#zone_chat .more,
 	#ciseauxInventaire,
 	#poubelleInventaire,
+	#visiofwi_open,
 	.inventaire_content #statsInventaire,
 	#stockInventaire.selected,
 	#stockInventaire,
@@ -349,9 +351,12 @@
 		border: 1px solid var(--couleur-primaire);
 	}
 
-	.inventaire_content #statsInventaire, .dataBox.dbtype1, #stockInventaire.selected {
-		background: var(--couleur-primaire);
-		color: var(--couleur-background);
+	#stockInventaire.hover, #stockInventaire:hover, #stockInventaire.selected, 
+	#ciseauxInventaire.hover, #ciseauxInventaire.selected, #ciseauxInventaire:hover, 
+	#poubelleInventaire.hover, #poubelleInventaire:hover, #poubelleInventaire.selected,
+	#visiofwi_open:hover, #visiofwi_open.selected {
+		background: var(--couleur-primaire) !important;
+		color: var(--couleur-background) !important;
 	}
 
 	/* ==============================
