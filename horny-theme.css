@@ -533,10 +533,8 @@
     	background: #E3E3E3 !important;
 	}
 
-	div[id^="db_message_"] div.contenu,
 	div[id^="db_message_"] div[id^="convers_"] {
-    	background-color: rgba(0, 0, 0, 0.3) !important;
-    	background-image: none !important;
+    	outline: 4px solid red !important;
 	}
 
 	.dataBox .message .zone_conversation .conversation .ligne1 {
