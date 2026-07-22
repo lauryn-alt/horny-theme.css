@@ -349,6 +349,11 @@
 		border: 1px solid var(--couleur-primaire);
 	}
 
+	.inventaire_content #statsInventaire, .dataBox.dbtype1, #stockInventaire.selected {
+		background: var(--couleur-primaire);
+		color: var(--couleur-background);
+	}
+
 	/* ==============================
        COULEUR SECONDAIRE
     ============================== */
