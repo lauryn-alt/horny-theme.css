@@ -534,7 +534,7 @@
 	}
 
 	.dataBox[id^="db_message_"] .contenu, .zone_conversation > div[id^="convers_"].conversation, .zone_conversation > div[id^="convers_"].conversation:hover, .zone_conversation > div[id^="convers_"].conversation.selected {
-		bakcground: rgb(0 0 0 / 30%);
+		bakcground: rgb(0 0 0 / 30%) !important;
 	}
 
 	.dataBox .message .zone_conversation .conversation .ligne1 {
