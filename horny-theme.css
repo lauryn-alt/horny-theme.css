@@ -270,8 +270,8 @@
 	}
 
 	.dataBox .close, .dataBox .reduce {
-    background-color: var(--couleur-background) !important;
-    box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
+    	background-color: var(--couleur-background) !important;
+    	box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
 	}
 
 	#zone_chat .connectes,
@@ -314,7 +314,8 @@
 
 	#consulter_compte:hover,
 	#creer_compte:hover,
-	#fermer_compte:hover {
+	#fermer_compte:hover,
+	.transfert .actions:hover {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
 	}
