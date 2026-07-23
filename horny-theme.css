@@ -218,7 +218,8 @@
 	#liste_stocks .stock table .type1, #liste_stocks_custom .stock table .type1,
 	#zone_rewardBox .small .data1,
 	.dataBox .aide_content h2,
-	.dataBox .message .zone_conversation .conversation .ligne2 {
+	.dataBox .message .zone_conversation .conversation .ligne2,
+	.linka, a {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -430,7 +431,8 @@
 	#infoBox, .infoBoxFixed,
 	#zone_chat .more:hover,
 	#zone_chat .less:hover,
-	#zone_dataBox .cercle_dashboard .historique .canWriteWall {
+	#zone_dataBox .cercle_dashboard .historique .canWriteWall,
+	.transfert .actions {
 		background: var(--couleur-background) !important;
 	}
 
@@ -446,6 +448,7 @@
 
 	#cercle_nav_slider > ul.nav_elt.historique > li:last-child {
     	background: var(--couleur-background) !important;
+		border: 1px solid var(--couleur-primaire);
 	}
 
 	.content:has(> form.message_nouveau),
