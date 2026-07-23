@@ -219,7 +219,10 @@
 	#zone_rewardBox .small .data1,
 	.dataBox .aide_content h2,
 	.dataBox .message .zone_conversation .conversation .ligne2,
-	.cercle_dashboard .encart ul li > a {
+	.cercle_dashboard .encart ul li > a,
+	#page_gestion .entreprise_infos_generales .type1,
+	#selecteur_local .label,
+	#selecteur_postes .label {
 		color: var(--couleur-primaire) !important;
 	}
 
