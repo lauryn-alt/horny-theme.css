@@ -221,8 +221,8 @@
 	.dataBox .message .zone_conversation .conversation .ligne2,
 	.cercle_dashboard .encart ul li > a,
 	#page_gestion .entreprise_infos_generales .type1,
-	#selecteur_local .label,
-	#selecteur_postes .label {
+	#page_local .entreprise_infos_generales span.type1,
+	#page_postes .entreprise_infos_generales span.type1 {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -492,7 +492,7 @@
 	}
 
 	form .mediumSelectInputOptions {
-			background: var(--couleur-background) !important;
+		background: var(--couleur-background) !important;
 	}
 
 	#zone_rewardBox .label,
@@ -503,6 +503,11 @@
 	#zone_fiche #statistiques li .infos {
 		background: var(--couleur-background);
 		border: 1px solid var(--couleur-primaire);
+	}
+
+	#selecteur_local .label,
+	#selecteur_postes .label {
+		color: var(--couleur-background);
 	}
 
 	/* ==============================
