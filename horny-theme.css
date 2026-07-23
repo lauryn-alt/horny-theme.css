@@ -430,13 +430,18 @@
 	#infoBox, .infoBoxFixed,
 	#zone_chat .more:hover,
 	#zone_chat .less:hover,
-	#zone_dataBox .cercle_dashboard .historique .canWriteWall,
-	textarea[name^="comment_histo_"] {
+	#zone_dataBox .cercle_dashboard .historique .canWriteWall {
 		background: var(--couleur-background) !important;
 	}
 
+	ul.comments {
+    	border-left-color: var(--couleur-background) !important;
+	}
+
 	textarea[name^="comment_histo_"] {
-		border-left: 10px solid var(--couleur-background);
+    	background: var(--couleur-background) !important;
+    	border: none !important;
+    	border-left: 10px solid var(--couleur-background) !important;
 	}
 
 	.content:has(> form.message_nouveau),
