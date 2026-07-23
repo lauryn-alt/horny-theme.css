@@ -431,11 +431,11 @@
 	#zone_chat .more:hover,
 	#zone_chat .less:hover,
 	#zone_dataBox .cercle_dashboard .historique .canWriteWall,
-	.comments textarea {
+	textarea[name^="comment_histo_"] {
 		background: var(--couleur-background) !important;
 	}
 
-	.comments textarea {
+	textarea[name^="comment_histo_"] {
 		border-left: 10px solid var(--couleur-background);
 	}
 
