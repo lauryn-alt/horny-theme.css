@@ -444,9 +444,9 @@
     	border-left: 10px solid var(--couleur-background) !important;
 	}
 
-	ul.comments > li:has(img[src*="small_loader.gif"]) {
-    	background: var(--couleur-background) !important;
-	}
+ul.comments > li[style*="cursor:pointer"][style*="text-align:center"] {
+    background: var(--couleur-background) !important;
+}
 
 	.content:has(> form.message_nouveau),
 	#db_crier_message.dataBox {
