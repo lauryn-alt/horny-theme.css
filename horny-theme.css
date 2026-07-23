@@ -429,8 +429,14 @@
 	#dc-carnet-agenda-button-v140,
 	#infoBox, .infoBoxFixed,
 	#zone_chat .more:hover,
-	#zone_chat .less:hover {
+	#zone_chat .less:hover,
+	#zone_dataBox .cercle_dashboard .historique .canWriteWall,
+	.comments textarea {
 		background: var(--couleur-background) !important;
+	}
+
+	.comments textarea {
+		border-left: 10px solid var(--couleur-background);
 	}
 
 	.content:has(> form.message_nouveau),
