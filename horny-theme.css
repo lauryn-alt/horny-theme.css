@@ -315,7 +315,8 @@
 	#consulter_compte:hover,
 	#creer_compte:hover,
 	#fermer_compte:hover,
-	.transfert .actions:hover {
+	.transfert .action2.link:hover,
+	.transfert .action1.link:hover{
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
 	}
