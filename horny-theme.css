@@ -461,7 +461,9 @@
 	.content:has(> form.message_nouveau),
 	#db_crier_message.dataBox,
 	#db_changement_infos_entreprise,
-	#db_batiment_gestion_entreprise {
+	#db_batiment_gestion_entreprise,
+	#db_creation_poste_entreprise,
+	#db_gestion_poste_entreprise {
     background-color: var(--couleur-background) !important;
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
@@ -510,7 +512,8 @@
 	}
 
 	#selecteur_local .label,
-	#selecteur_postes .label {
+	#selecteur_postes .label,
+	#gestion_poste .disponible {
 		color: var(--couleur-background);
 	}
 
