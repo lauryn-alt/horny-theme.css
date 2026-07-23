@@ -457,12 +457,15 @@
 	}
 
 	.content:has(> form.message_nouveau),
-	#db_crier_message.dataBox,
-	.dataBox#db_changement_infos_entreprise {
+	#db_crier_message.dataBox {
     background-color: var(--couleur-background) !important;
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
 	}
+
+#db_changement_infos_entreprise {
+    background: red !important;
+}
 
 	.inventaire_content #statsInventaire,
 	.dataBox.dbtype1,
