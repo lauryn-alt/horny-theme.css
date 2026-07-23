@@ -444,7 +444,7 @@
     	border-left: 10px solid var(--couleur-background) !important;
 	}
 
-	ul.comments > li[onclick*="Group/GetInfo/Historic"] {
+	ul.comments > li:has(img[src*="small_loader.gif"]) {
     	background: var(--couleur-background) !important;
 	}
 
