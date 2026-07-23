@@ -427,7 +427,9 @@
 	#db_wages.dataBox.ui-draggable,
 	.dataBox .head,
 	#dc-carnet-agenda-button-v140,
-	#infoBox, .infoBoxFixed {
+	#infoBox, .infoBoxFixed,
+	#zone_chat .more:hover,
+	#zone_chat .less:hover {
 		background: var(--couleur-background) !important;
 	}
 
