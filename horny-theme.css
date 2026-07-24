@@ -495,7 +495,8 @@
 	.dataBox[id^="db_rpbook"],
 	#db_portable_device,
 	#db_liste_prisonnier,
-	#db_historique_cristaux {
+	#db_historique_cristaux,
+	#db_imperial_data {
     background-color: var(--couleur-background) !important;
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
