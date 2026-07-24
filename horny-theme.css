@@ -331,7 +331,9 @@
 	.btnTxt[onclick*="changeMenu(this, '#resume_compte');"]:hover,
 	.btnTxt[onclick*="changeMenu(this, '#inventaire_compte');"]:hover,
 	.btnTxt[onclick*="changeMenu(this, '#credits_compte');"]:hover,
-	.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover {
+	.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover,
+	#transfert_pills .btnTxt:hover,
+	#db_mes_achats1 .informations .btnTxt:hover	{
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
 	}
