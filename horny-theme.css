@@ -474,7 +474,8 @@
 	}
 
 	#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
-	#batiment_gestion {
+	#batiment_gestion,
+	#liste_stocks .logement_minimap {
     	background: var(--couleur-background) !important;
 		border: 1px solid var(--couleur-primaire);
 	}
