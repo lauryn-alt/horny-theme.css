@@ -1,3 +1,7 @@
+/* ==============================
+   COULEURS MODIFIABLES
+============================== */
+
 :root {
     --couleur-primaire: #95bb41;
     --couleur-secondaire: #59663c9c;
@@ -26,6 +30,10 @@
 		inset 0 0 5px 0 var(--couleur-background);
     --police-interface: Geneva, Verdana, sans-serif;
 }
+
+/* ==============================
+   FILTRES / RECOLORATION
+============================== */
 
 #zone_travail .icon,
 #zone_logement .icon,
@@ -69,6 +77,10 @@ form .mediumSelectInput .right {
 #fondSouterrain {
     filter: var(--filtre-fonds) !important;
 }
+
+/* ==============================
+   IMAGES D'INTERFACE
+============================== */
 
 #zone_quete {
     position: absolute;
@@ -143,6 +155,10 @@ form .mediumSelectInput .right {
     background: url(https://i.imgur.com/nNgtHYB.png) -435px 0 no-repeat;
 }
 
+/* ==============================
+   COULEUR PRIMAIRE
+============================== */
+
 #zone_carnet .btnTxt.selected,
 #zone_carnet .btnTxt:hover,
 #zone_carnet .infoAide:hover,
@@ -172,6 +188,10 @@ form .mediumSelectInput .right {
 #zone_messagerie .btnTxt,
 #zone_carnet .infoAide,
 #zone_chat #onglets_chat li.selected,
+/* ==============================
+   AJUSTEMENTS DIVERS
+============================== */
+
 #zone_chat .more,
 #chatForm .text_mode,
 #lieu_actuel .titre1,
@@ -243,6 +263,10 @@ form .mediumSelectInputOptions div.type1,
     border: 1px solid var(--couleur-primaire) !important;
 }
 
+/* ==============================
+   COULEUR SECONDAIRE
+============================== */
+
 #zone_fiche #statistiques li > .infos_desc_1,
 .dataBox .head,
 #db_group_dashboard {
@@ -270,6 +294,10 @@ form .mediumSelectInputOptions div.type1,
 #zone_chat #onglets_chat li.selected,
 .quete_tab.btnTxt,
 .quete_aide,
+/* ==============================
+   BACKGROUNDS GÉNÉRAUX
+============================== */
+
 #db_group_dashboard,
 #dc-carnet-agenda-button-v140 {
     box-shadow: var(--ombre-neon) !important;
@@ -403,6 +431,10 @@ form .mediumSelectInputOptions div.type1,
 button.text_valider.transition3s {
     background-color: var(--couleur-secondaire) !important;
 }
+
+/* ==============================
+   COULEUR TERTIAIRE
+============================== */
 
 #zone_fiche #statistiques ul > li,
 #zone_fiche #txt_pseudo,
