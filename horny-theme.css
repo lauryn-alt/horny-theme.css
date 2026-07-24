@@ -560,7 +560,7 @@ textarea[name^="comment_histo_"] {
 #zone_fiche #txt_pseudo,
 #quete_titre_texte {
     font-family: var(--police-interface);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .dataBox .close,
