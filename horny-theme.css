@@ -228,7 +228,8 @@
 	#zone_dataBox .livreRP .livremessage .precision,
 	.couleur2,
 	#ingame #bandeau .link:hover,
-	#liste_prisonniers th {
+	#liste_prisonniers th,
+	#entreprise_historique .entreprise_historique_ligne > span:first-child {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -492,7 +493,9 @@
 	#db_mes_achats1, #db_mes_achats2,
 	#db_actions_speciales,
 	.dataBox[id^="db_rpbook"],
-	#db_portable_device {
+	#db_portable_device,
+	#db_liste_prisonnier,
+	#db_historique_cristaux {
     background-color: var(--couleur-background) !important;
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
