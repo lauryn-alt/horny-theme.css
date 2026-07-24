@@ -447,7 +447,15 @@
 	#zone_chat .more:hover,
 	#zone_chat .less:hover,
 	#zone_dataBox .cercle_dashboard .historique .canWriteWall,
-	.transfert .actions {
+	.transfert .actions,
+	#interface_achat.colorize, #zone_cases_achat .boutique_rp,
+	.dataBox .message_nouveau .envoyer:hover,
+	.dataBox .content:has(.aide_info.article_100),
+	.dataBox .content:has(.aide_info[class*="article_"]),
+	.dataBox .content:has(.aide_info.aide_admin),
+	.dataBox .content:has(.aide_info.aide_credits),
+	form .mediumSelectInputOptions,
+	#db_mes_achats1 .objets_premium .nb_pilules {
 		background: var(--couleur-background) !important;
 	}
 
@@ -488,10 +496,6 @@
 		background: none !important;
 	}
 
-	.dataBox .message_nouveau .envoyer:hover {
-    	background: var(--couleur-background) !important;
-	}
-
 	#dc-carnet-agenda-panel-v140 button,
 	#dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
 	#dc-carnet-agenda-day-modal-v140 button {
@@ -501,15 +505,6 @@
 
 	#dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
 		background: rgb(255 255 255 / 11%);
-	}
-
-	.dataBox .content:has(.aide_info.article_100),
-	.dataBox .content:has(.aide_info[class*="article_"]),
-	.dataBox .content:has(.aide_info.aide_admin),
-	.dataBox .content:has(.aide_info.aide_credits),
-	form .mediumSelectInputOptions,
-	#db_mes_achats1 .objets_premium .nb_pilules{
-    	background: var(--couleur-background) !important;
 	}
 
 	#zone_rewardBox .label,
