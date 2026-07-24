@@ -38,7 +38,7 @@
     --dc-img-actions-speciales-bg: url("https://www.dreadcast.net/images/fr/design/fond_actions_speciales_bg.jpg");
     --dc-img-actions-speciales: url("https://www.dreadcast.net/images/fr/design/fond_actions_speciales.png");
     --dc-img-champ-select-bord: url("https://www.dreadcast.net/images/fr/design/champselect_1_bord.png");
-    --filtre-icones: hue-rotate(240deg);
+    --filtre-icones: hue-rotate(240deg) saturate(100%) brightness(100%);
     --filtre-fonds: brightness(15%);
     --ombre-neon: 0 0 2px 0 var(--couleur-ombre-blanche),
 		0 0 10px 0 var(--couleur-primaire),
