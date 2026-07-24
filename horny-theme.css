@@ -229,7 +229,8 @@
 	.couleur2,
 	#ingame #bandeau .link:hover,
 	#liste_prisonniers th,
-	#entreprise_historique .entreprise_historique_ligne > span:first-child {
+	#entreprise_historique .entreprise_historique_ligne > span:first-child,
+	#chatContent .white > span:has(> em) {
 		color: var(--couleur-primaire) !important;
 	}
 
