@@ -182,9 +182,9 @@
 	#zone_carnet .infoAide:hover,
 	#dc-carnet-agenda-button-v140:hover,
 	#dc-carnet-agenda-button-v140.selected {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
-	box-shadow: var(--ombre-neon-sombre) !important;
+    	background: var(--couleur-primaire) !important;
+    	color: var(--couleur-background) !important;
+		box-shadow: var(--ombre-neon-sombre) !important;
 	}
 
 	#zone_fiche #txt_titre,
