@@ -16,6 +16,27 @@
     --img-zone-droite: url("https://i.imgur.com/Aygz15c.png");
     --img-inventaire: url("https://i.imgur.com/FxN9Quz.png");
     --img-hologramme: url("https://i.imgur.com/P2DGHZy.png");
+
+
+    /* Images natives de DreadCast pouvant être remplacées par couleur */
+    --dc-img-technopole: url("https://www.dreadcast.net/images/fr/design/fond_technopole.png");
+    --dc-img-icones: url("https://www.dreadcast.net/images/fr/design/icones/icones.png");
+    --dc-img-building-actions: url("https://www.dreadcast.net/images/fr/design/fond_building_actions.png");
+    --dc-img-travail: url("https://www.dreadcast.net/images/fr/design/travail.png");
+    --dc-img-objet-loader: url("https://www.dreadcast.net/images/fr/design/objet_loader.gif");
+    --dc-img-loader-native: url("https://www.dreadcast.net/images/fr/design/loader1.gif");
+    --dc-img-reward-box: url("https://www.dreadcast.net/images/fr/design/images_rewardBox.png");
+    --dc-img-fonds: url("https://www.dreadcast.net/images/fr/design/fonds.png");
+    --dc-img-interface-icons: url("https://www.dreadcast.net/images/fr/design/fond_interface_icons.png");
+    --dc-img-bouton-repeat-x: url("https://www.dreadcast.net/images/fr/design/fond_bouton_repeatX.png");
+    --dc-img-compteur: url("https://www.dreadcast.net/images/fr/design/compteur.png");
+    --dc-img-carte-cadre: url("https://www.dreadcast.net/images/fr/design/carte_cadre.png");
+    --dc-img-btn-actions: url("https://www.dreadcast.net/images/fr/design/boutons/btn_actions.png");
+    --dc-img-boutons: url("https://www.dreadcast.net/images/fr/design/boutons/boutons.png");
+    --dc-img-map-actions: url("https://www.dreadcast.net/images/carte/map_actions_bouton1.png");
+    --dc-img-actions-speciales-bg: url("https://www.dreadcast.net/images/fr/design/fond_actions_speciales_bg.jpg");
+    --dc-img-actions-speciales: url("https://www.dreadcast.net/images/fr/design/fond_actions_speciales.png");
+    --dc-img-champ-select-bord: url("https://www.dreadcast.net/images/fr/design/champselect_1_bord.png");
     --filtre-icones: hue-rotate(240deg);
     --filtre-fonds: brightness(15%);
     --ombre-neon: 0 0 2px 0 var(--couleur-ombre-blanche),
