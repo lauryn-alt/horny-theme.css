@@ -230,7 +230,7 @@
 	#ingame #bandeau .link:hover,
 	#liste_prisonniers th,
 	#entreprise_historique .entreprise_historique_ligne > span:first-child,
-	#chatContent .white > span:has(> em) {
+	#chatContent .white > span > em {
 		color: var(--couleur-primaire) !important;
 	}
 
