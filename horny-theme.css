@@ -24,7 +24,9 @@
     --dc-img-travail: url("https://www.dreadcast.net/images/fr/design/travail.png");
     --dc-img-objet-loader: url("https://www.dreadcast.net/images/fr/design/objet_loader.gif");
     --dc-img-loader1: url("https://www.dreadcast.net/images/fr/design/loader1.gif");
-    --dc-img-reward-box: url("https://www.dreadcast.net/images/fr/design/images_rewardBox.png");
+    --dc-img-reward-box-background: url("https://www.dreadcast.net/images/fr/design/fond_rewardBox.png");
+    --dc-img-reward-box-icons: url("https://www.dreadcast.net/images/fr/design/images_rewardBox.png");
+    --dc-img-icon-stats: url("https://www.dreadcast.net/images/fr/design/icones/icon_stats.png");
     --dc-img-fonds: url("https://www.dreadcast.net/images/fr/design/fonds.png");
     --dc-img-interface-icons: url("https://www.dreadcast.net/images/fr/design/fond_interface_icons.png");
     --dc-img-bouton-repeat-x: url("https://www.dreadcast.net/images/fr/design/fond_bouton_repeatX.png");
@@ -164,15 +166,15 @@ form .mediumSelectInput .right {
 }
 
 #zone_rewardBox .header {
-    background: var(--dc-img-reward-box) 0 0 no-repeat;
+    background: var(--dc-img-reward-box-icons) 0 0 no-repeat;
 }
 
 #zone_rewardBox .main {
-    background: var(--dc-img-reward-box) -870px 0 repeat-y;
+    background: var(--dc-img-reward-box-icons) -870px 0 repeat-y;
 }
 
 #zone_rewardBox .footer {
-    background: var(--dc-img-reward-box) -435px 0 no-repeat;
+    background: var(--dc-img-reward-box-icons) -435px 0 no-repeat;
 }
 
 /* ==============================
