@@ -177,6 +177,10 @@ form .mediumSelectInput .right {
     background: var(--dc-img-reward-box-background) -435px 0 no-repeat !important;
 }
 
+#zone_rewardBox .competences .icone {
+    background-image: var(--dc-img-reward-box-icons) !important;
+}
+
 /* ==============================
    COULEUR PRIMAIRE
 ============================== */
