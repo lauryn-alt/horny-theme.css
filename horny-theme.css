@@ -17,7 +17,11 @@
     --img-inventaire: url("https://i.imgur.com/FxN9Quz.png");
     --img-hologramme: url("https://i.imgur.com/P2DGHZy.png");
 
-    /* Images natives de DreadCast remplaçables selon la couleur choisie */
+    /*
+     * Images natives de DreadCast.
+     * Le JavaScript met à jour ces variables et remplace également les URL
+     * présentes dans les styles natifs du jeu.
+     */
     --dc-img-technopole: url("https://www.dreadcast.net/images/fr/design/fond_technopole.png");
     --dc-img-icones: url("https://www.dreadcast.net/images/fr/design/icones/icones.png");
     --dc-img-building-actions: url("https://www.dreadcast.net/images/fr/design/fond_building_actions.png");
@@ -164,15 +168,15 @@ form .mediumSelectInput .right {
 }
 
 #zone_rewardBox .header {
-    background: var(--dc-img-reward-box) 0 0 no-repeat;
+    background: var(--dc-img-reward-box) 0 0 no-repeat !important;
 }
 
 #zone_rewardBox .main {
-    background: var(--dc-img-reward-box) -870px 0 repeat-y;
+    background: var(--dc-img-reward-box) -870px 0 repeat-y !important;
 }
 
 #zone_rewardBox .footer {
-    background: var(--dc-img-reward-box) -435px 0 no-repeat;
+    background: var(--dc-img-reward-box) -435px 0 no-repeat !important;
 }
 
 /* ==============================
