@@ -463,7 +463,11 @@
 	#db_changement_infos_entreprise,
 	#db_batiment_gestion_entreprise,
 	#db_creation_poste_entreprise,
-	#db_gestion_poste_entreprise {
+	#db_gestion_poste_entreprise,
+	.dataBox[id^="db_fouille_meuble_"],
+	.dataBox[id^="#db_panneau_"],
+	#db_mes_achats1, #db_mes_achats2,
+	#db_actions_speciales {
     background-color: var(--couleur-background) !important;
     box-shadow:
         inset 0 0 8px var(--couleur-primaire);
