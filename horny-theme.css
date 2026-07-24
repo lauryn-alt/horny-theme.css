@@ -259,7 +259,8 @@ form .mediumSelectInputOptions div.type1,
 #zone_fiche #icon_action svg,
 #zone_fiche #statistiques li svg,
 #combat_menu div svg,
-#zone_actions div svg {
+#zone_actions div svg,
+svg {
     fill: var(--couleur-primaire);
 }
 
