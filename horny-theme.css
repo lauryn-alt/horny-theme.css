@@ -226,7 +226,8 @@
 	form .mediumSelectInputOptions div.type1,
 	#db_actions_speciales .titre,
 	#zone_dataBox .livreRP .livremessage .precision,
-	.couleur2 {
+	.couleur2,
+	#ingame #bandeau .link:hover {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -523,7 +524,8 @@
 
 	#selecteur_local .label,
 	#selecteur_postes .label,
-	#gestion_poste .disponible {
+	#gestion_poste .disponible,
+	.couleur2:hover {
 		color: var(--couleur-background);
 	}
 
