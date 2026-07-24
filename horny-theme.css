@@ -17,14 +17,13 @@
     --img-inventaire: url("https://i.imgur.com/FxN9Quz.png");
     --img-hologramme: url("https://i.imgur.com/P2DGHZy.png");
 
-
-    /* Images natives de DreadCast pouvant être remplacées par couleur */
+    /* Images natives de DreadCast remplaçables selon la couleur choisie */
     --dc-img-technopole: url("https://www.dreadcast.net/images/fr/design/fond_technopole.png");
     --dc-img-icones: url("https://www.dreadcast.net/images/fr/design/icones/icones.png");
     --dc-img-building-actions: url("https://www.dreadcast.net/images/fr/design/fond_building_actions.png");
     --dc-img-travail: url("https://www.dreadcast.net/images/fr/design/travail.png");
     --dc-img-objet-loader: url("https://www.dreadcast.net/images/fr/design/objet_loader.gif");
-    --dc-img-loader-native: url("https://www.dreadcast.net/images/fr/design/loader1.gif");
+    --dc-img-loader1: url("https://www.dreadcast.net/images/fr/design/loader1.gif");
     --dc-img-reward-box: url("https://www.dreadcast.net/images/fr/design/images_rewardBox.png");
     --dc-img-fonds: url("https://www.dreadcast.net/images/fr/design/fonds.png");
     --dc-img-interface-icons: url("https://www.dreadcast.net/images/fr/design/fond_interface_icons.png");
@@ -165,15 +164,15 @@ form .mediumSelectInput .right {
 }
 
 #zone_rewardBox .header {
-    background: url(https://i.imgur.com/nNgtHYB.png) 0 0 no-repeat;
+    background: var(--dc-img-reward-box) 0 0 no-repeat;
 }
 
 #zone_rewardBox .main {
-    background: url(https://i.imgur.com/nNgtHYB.png) -870px 0 repeat-y;
+    background: var(--dc-img-reward-box) -870px 0 repeat-y;
 }
 
 #zone_rewardBox .footer {
-    background: url(https://i.imgur.com/nNgtHYB.png) -435px 0 no-repeat;
+    background: var(--dc-img-reward-box) -435px 0 no-repeat;
 }
 
 /* ==============================
