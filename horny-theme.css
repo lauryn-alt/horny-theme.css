@@ -223,7 +223,8 @@
 	#page_gestion .entreprise_infos_generales .type1,
 	#page_local .entreprise_infos_generales span.type1,
 	#page_postes .entreprise_infos_generales span.type1,
-	form .mediumSelectInputOptions div.type1 {
+	form .mediumSelectInputOptions div.type1,
+	#db_actions_speciales .titre {
 		color: var(--couleur-primaire) !important;
 	}
 
@@ -320,7 +321,9 @@
 	#creer_compte:hover,
 	#fermer_compte:hover,
 	.transfert .action2.link:hover,
-	.transfert .action1.link:hover{
+	.transfert .action1.link:hover,
+	#db_mes_achats1 .btnTxt.one-third:hover,
+	#db_mes_achats2 .btnTxt.one-third:hover {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
 	}
@@ -367,6 +370,10 @@
 	#visiofwi_open:hover, #visiofwi_open.selected {
 		background: var(--couleur-primaire) !important;
 		color: var(--couleur-background) !important;
+	}
+
+	#zone_dataBox .meuble_inventaire .case_objet.linkBox_vide {
+		border-color: var(--couleur-primaire);
 	}
 
 	/* ==============================
@@ -465,7 +472,7 @@
 	#db_creation_poste_entreprise,
 	#db_gestion_poste_entreprise,
 	.dataBox[id^="db_fouille_meuble_"],
-	.dataBox[id^="#db_panneau_"],
+	.dataBox[id^="db_panneau_"],
 	#db_mes_achats1, #db_mes_achats2,
 	#db_actions_speciales {
     background-color: var(--couleur-background) !important;
@@ -497,12 +504,10 @@
 	.dataBox .content:has(.aide_info.article_100),
 	.dataBox .content:has(.aide_info[class*="article_"]),
 	.dataBox .content:has(.aide_info.aide_admin),
-	.dataBox .content:has(.aide_info.aide_credits) {
+	.dataBox .content:has(.aide_info.aide_credits),
+	form .mediumSelectInputOptions,
+	#db_mes_achats1 .objets_premium .nb_pilules{
     	background: var(--couleur-background) !important;
-	}
-
-	form .mediumSelectInputOptions {
-		background: var(--couleur-background) !important;
 	}
 
 	#zone_rewardBox .label,
