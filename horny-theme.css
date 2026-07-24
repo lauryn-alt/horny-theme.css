@@ -526,7 +526,8 @@
 	#selecteur_local .label,
 	#selecteur_postes .label,
 	#gestion_poste .disponible,
-	.couleur2:hover {
+	.couleur2:hover,
+	#ingame #bandeau ul.menus ul li:hover {
 		color: var(--couleur-background);
 	}
 
