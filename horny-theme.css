@@ -166,15 +166,15 @@ form .mediumSelectInput .right {
 }
 
 #zone_rewardBox .header {
-    background: var(--dc-img-reward-box-icons) 0 0 no-repeat;
+    background: var(--dc-img-reward-box-background) 0 0 no-repeat !important;
 }
 
 #zone_rewardBox .main {
-    background: var(--dc-img-reward-box-icons) -870px 0 repeat-y;
+    background: var(--dc-img-reward-box-background) -870px 0 repeat-y !important;
 }
 
 #zone_rewardBox .footer {
-    background: var(--dc-img-reward-box-icons) -435px 0 no-repeat;
+    background: var(--dc-img-reward-box-background) -435px 0 no-repeat !important;
 }
 
 /* ==============================
