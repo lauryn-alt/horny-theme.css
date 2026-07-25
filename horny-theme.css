@@ -58,6 +58,7 @@
 ============================== */
 
 #zone_travail .icon,
+#zone_logement .icon,
 #zone_chat .icon,
 #critere_selection .taille1,
 form .counter,
@@ -81,6 +82,14 @@ form .mediumSelectInput .right {
     filter: var(--filtre-icones) !important;
 }
 
+/* Exceptions : icônes maison et vendeur de vitrine */
+#zone_travail .btn svg:has(use[href="#icon-maison"]),
+#zone_travail .btn svg:has(use[xlink\:href="#icon-maison"]),
+#zone_travail .btn svg:has(use[href="#icon-vendeurvitrine"]),
+#zone_travail .btn svg:has(use[xlink\:href="#icon-vendeurvitrine"]) {
+    filter: none !important;
+}
+
 #fondVille1,
 #fondVille2,
 #fondVille3,
@@ -98,6 +107,7 @@ form .mediumSelectInput .right {
 #fondSouterrain {
     filter: var(--filtre-fonds) !important;
 }
+
 
 /* ==============================
    IMAGES D'INTERFACE
