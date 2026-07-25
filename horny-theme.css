@@ -58,7 +58,6 @@
 ============================== */
 
 #zone_travail .icon,
-#zone_logement .icon,
 #zone_chat .icon,
 #critere_selection .taille1,
 form .counter,
@@ -66,7 +65,6 @@ form .bigValidInput,
 .stat_icone_soif,
 .stat_icone_faim,
 .stat_icone_cr,
-#zone_travail .btn svg,
 #infos_menu .book-place.selected .icon,
 #infos_menu .book-place:hover .icon,
 #zone_lightBox .lightBox .annuler,
@@ -80,14 +78,6 @@ form div.sujet .left,
 #zone_rewardBox .footer .close,
 form .mediumSelectInput .right {
     filter: var(--filtre-icones) !important;
-}
-
-/* Exceptions : icônes maison et vendeur de vitrine */
-#zone_travail .btn svg:has(use[href="#icon-maison"]),
-#zone_travail .btn svg:has(use[xlink\:href="#icon-maison"]),
-#zone_travail .btn svg:has(use[href="#icon-vendeurvitrine"]),
-#zone_travail .btn svg:has(use[xlink\:href="#icon-vendeurvitrine"]) {
-    filter: none !important;
 }
 
 #fondVille1,
