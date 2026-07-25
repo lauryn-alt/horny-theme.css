@@ -198,6 +198,11 @@ form .mediumSelectInput .right {
     box-shadow: var(--ombre-neon-sombre) !important;
 }
 
+
+/* ==============================
+   AJUSTEMENTS DIVERS
+============================== */
+
 #zone_fiche #txt_titre,
 #zone_fiche #statistiques .infostats .max,
 #ciseauxInventaire,
@@ -213,10 +218,6 @@ form .mediumSelectInput .right {
 #zone_messagerie .btnTxt,
 #zone_carnet .infoAide,
 #zone_chat #onglets_chat li.selected,
-/* ==============================
-   AJUSTEMENTS DIVERS
-============================== */
-
 #zone_chat .more,
 #chatForm .text_mode,
 #lieu_actuel .titre1,
@@ -312,6 +313,11 @@ svg {
     border-bottom: 1px solid var(--couleur-primaire);
 }
 
+
+/* ==============================
+   BACKGROUNDS GÉNÉRAUX
+============================== */
+
 .case_objet,
 #zone_messagerie #display_messagerie,
 #zone_carnet .btnTxt,
@@ -320,10 +326,6 @@ svg {
 #zone_chat #onglets_chat li.selected,
 .quete_tab.btnTxt,
 .quete_aide,
-/* ==============================
-   BACKGROUNDS GÉNÉRAUX
-============================== */
-
 #db_group_dashboard,
 #dc-carnet-agenda-button-v140 {
     box-shadow: var(--ombre-neon) !important;
@@ -347,7 +349,8 @@ svg {
 #dc-carnet-agenda-modal-v140 input[type="date"],
 #dc-carnet-agenda-modal-v140 input[type="time"],
 #dc-carnet-agenda-modal-v140 select,
-#dc-carnet-agenda-modal-v140 textarea {
+#dc-carnet-agenda-modal-v140 textarea,
+.deck_type_1 .deck_main {
     border: 1px solid var(--couleur-primaire);
 }
 
@@ -492,7 +495,8 @@ span.notif-number {
 .dataBox .content:has(.aide_info.aide_admin),
 .dataBox .content:has(.aide_info.aide_credits),
 form .mediumSelectInputOptions,
-#db_mes_achats1 .objets_premium .nb_pilules {
+#db_mes_achats1 .objets_premium .nb_pilules,
+.deck_type_1 .deck_main {
     background: var(--couleur-background) !important;
 }
 
