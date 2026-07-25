@@ -350,7 +350,11 @@ svg {
 #dc-carnet-agenda-modal-v140 input[type="time"],
 #dc-carnet-agenda-modal-v140 select,
 #dc-carnet-agenda-modal-v140 textarea,
-.deck_type_1 .deck_main {
+.deck_type_1 .deck_main,
+.deck_type_2 .deck_main,
+.deck_type_3 .deck_main,
+.deck_type_4 .deck_main,
+.deck_type_5 .deck_main {
     border: 1px solid var(--couleur-primaire);
 }
 
@@ -496,7 +500,11 @@ span.notif-number {
 .dataBox .content:has(.aide_info.aide_credits),
 form .mediumSelectInputOptions,
 #db_mes_achats1 .objets_premium .nb_pilules,
-.deck_type_1 .deck_main {
+.deck_type_1 .deck_main,
+.deck_type_2 .deck_main,
+.deck_type_3 .deck_main,
+.deck_type_4 .deck_main,
+.deck_type_5 .deck_main {
     background: var(--couleur-background) !important;
 }
 
