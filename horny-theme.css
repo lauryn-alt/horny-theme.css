@@ -431,10 +431,6 @@ svg {
 #zone_fiche #statistiques li > .infos_desc_1,
 #zone_fiche .barre_border .fa-caret-right,
 .grid_head_travail_logement .btn.link.infoAide,
-#zone_messagerie #display_messagerie,
-#zone_carnet .btnTxt,
-#zone_messagerie .btnTxt,
-#zone_carnet .infoAide,
 #zone_chat #onglets_chat li.selected,
 #zone_chat .more,
 #chatForm .text_mode,
@@ -505,7 +501,11 @@ form .mediumSelectInputOptions,
 .deck_type_2 .deck_main,
 .deck_type_3 .deck_main,
 .deck_type_4 .deck_main,
-.deck_type_5 .deck_main {
+.deck_type_5 .deck_main,
+#zone_carnet .btnTxt,
+#zone_messagerie .btnTxt,
+#zone_messagerie #display_messagerie,
+#zone_carnet .infoAide {
     background: var(--couleur-background) !important;
 }
 
