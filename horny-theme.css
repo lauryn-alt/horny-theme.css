@@ -184,25 +184,6 @@ form .mediumSelectInput .right {
    COULEUR PRIMAIRE
 ============================== */
 
-#zone_carnet .btnTxt.selected,
-#zone_carnet .btnTxt:hover,
-#zone_carnet .infoAide:hover,
-#zone_messagerie .btnTxt.selected,
-#zone_messagerie .btnTxt:hover,
-#zone_messagerie #display_messagerie:hover,
-#zone_messagerie #display_messagerie.selected,
-#dc-carnet-agenda-button-v140:hover,
-#dc-carnet-agenda-button-v140.selected {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
-    box-shadow: var(--ombre-neon-sombre) !important;
-}
-
-
-/* ==============================
-   AJUSTEMENTS DIVERS
-============================== */
-
 #zone_fiche #txt_titre,
 #zone_fiche #statistiques .infostats .max,
 #ciseauxInventaire,
@@ -247,7 +228,10 @@ form .mediumSelectInputOptions div.type1,
 #ingame #bandeau .link:hover,
 #liste_prisonniers th,
 #entreprise_historique .entreprise_historique_ligne > span:first-child,
-#chatContent .white > span > em {
+#chatContent .white > span > em,
+.btnTxt[id*="nm_edit_description_"]:hover,
+.grid_head_travail_logement .btn.link.infoAide.select,
+.grid_head_travail_logement .btn.link.infoAide:hover {
     color: var(--couleur-primaire) !important;
 }
 
@@ -268,7 +252,45 @@ svg {
 #combat_menu > div.active > svg,
 #zone_actions > div.active > svg,
 #zone_dataBox .cercle_dashboard .navigation li.selected,
-#zone_dataBox .cercle_dashboard .navigation li:hover {
+#zone_dataBox .cercle_dashboard .navigation li:hover,
+#zone_carnet .btnTxt.selected,
+#zone_carnet .btnTxt:hover,
+#zone_carnet .infoAide:hover,
+#zone_messagerie .btnTxt.selected,
+#zone_messagerie .btnTxt:hover,
+#zone_messagerie #display_messagerie:hover,
+#zone_messagerie #display_messagerie.selected,
+#dc-carnet-agenda-button-v140:hover,
+#dc-carnet-agenda-button-v140.selected,
+.btn_message_gradient,
+#consulter_compte:hover,
+#creer_compte:hover,
+#fermer_compte:hover,
+.transfert .action2.link:hover,
+.transfert .action1.link:hover,
+#db_mes_achats1 .btnTxt.one-third:hover,
+#db_mes_achats2 .btnTxt.one-third:hover,
+.case_objet.btn_voir_plus.btnTxt:hover,
+.btnTxt[onclick*="changeMenu(this, '#resume_compte');"]:hover,
+.btnTxt[onclick*="changeMenu(this, '#inventaire_compte');"]:hover,
+.btnTxt[onclick*="changeMenu(this, '#credits_compte');"]:hover,
+.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover,
+#transfert_pills .btnTxt:hover,
+#db_mes_achats1 .informations .btnTxt:hover,
+#stockInventaire.hover,
+#stockInventaire:hover,
+#stockInventaire.selected,
+#ciseauxInventaire.hover,
+#ciseauxInventaire.selected,
+#ciseauxInventaire:hover,
+#poubelleInventaire.hover,
+#poubelleInventaire:hover,
+#poubelleInventaire.selected,
+#statsInventaire.hover,
+#statsInventaire:hover,
+#statsInventaire.selected,
+#visiofwi_open:hover,
+#visiofwi_open.selected {
     background: var(--couleur-primaire);
 }
 
@@ -286,13 +308,32 @@ svg {
 #zone_actions > div.active > svg,
 .quete_aide,
 .btnTxt,
-#zone_carnet .infoAide {
+#zone_carnet .infoAide,
+.btn_message_gradient,
+#dc-carnet-agenda-panel-v140,
+#dc-carnet-agenda-modal-v140 .dc-agenda-modal-box,
+#dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box,
+#dc-carnet-agenda-panel-v140 .dc-agenda-day,
+#dc-carnet-agenda-modal-v140 input[type="text"],
+#dc-carnet-agenda-modal-v140 input[type="date"],
+#dc-carnet-agenda-modal-v140 input[type="time"],
+#dc-carnet-agenda-modal-v140 select,
+#dc-carnet-agenda-modal-v140 textarea,
+.deck_type_1 .deck_main,
+.deck_type_2 .deck_main,
+.deck_type_3 .deck_main,
+.deck_type_4 .deck_main,
+.deck_type_5 .deck_main,
+.evilBox,
+#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
+#batiment_gestion,
+#liste_stocks .logement_minimap,
+#dc-carnet-agenda-panel-v140 button,
+#dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
+#dc-carnet-agenda-day-modal-v140 button,
+#zone_fiche #statistiques li .infos {
     border: 1px solid var(--couleur-primaire) !important;
 }
-
-/* ==============================
-   COULEUR SECONDAIRE
-============================== */
 
 #zone_fiche #statistiques li > .infos_desc_1,
 .dataBox .head,
@@ -304,8 +345,7 @@ svg {
 
 .dataBox .close,
 .dataBox .reduce {
-    background-color: var(--couleur-background) !important;
-    box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
+	box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
 }
 
 #zone_chat .connectes,
@@ -313,120 +353,49 @@ svg {
     border-bottom: 1px solid var(--couleur-primaire);
 }
 
-
-/* ==============================
-   BACKGROUNDS GÉNÉRAUX
-============================== */
-
-.case_objet,
-#zone_messagerie #display_messagerie,
-#zone_carnet .btnTxt,
-#zone_messagerie .btnTxt,
-#zone_carnet .infoAide,
-#zone_chat #onglets_chat li.selected,
-.quete_tab.btnTxt,
-.quete_aide,
-#db_group_dashboard,
-#dc-carnet-agenda-button-v140 {
-    box-shadow: var(--ombre-neon) !important;
-}
-
-.btn_message_gradient {
-    box-shadow: none !important;
-    background: var(--couleur-primaire) !important;
-    border: 1px solid var(--couleur-primaire) !important;
-}
-
-#dc-carnet-agenda-panel-v140,
-#dc-carnet-agenda-modal-v140 .dc-agenda-modal-box,
-#dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box {
-    background: #1c1c1c !important;
-    border: 1px solid var(--couleur-primaire);
-}
-
-#dc-carnet-agenda-panel-v140 .dc-agenda-day,
-#dc-carnet-agenda-modal-v140 input[type="text"],
-#dc-carnet-agenda-modal-v140 input[type="date"],
-#dc-carnet-agenda-modal-v140 input[type="time"],
-#dc-carnet-agenda-modal-v140 select,
-#dc-carnet-agenda-modal-v140 textarea,
-.deck_type_1 .deck_main,
-.deck_type_2 .deck_main,
-.deck_type_3 .deck_main,
-.deck_type_4 .deck_main,
-.deck_type_5 .deck_main {
-    border: 1px solid var(--couleur-primaire);
-}
-
-#consulter_compte:hover,
-#creer_compte:hover,
-#fermer_compte:hover,
-.transfert .action2.link:hover,
-.transfert .action1.link:hover,
-#db_mes_achats1 .btnTxt.one-third:hover,
-#db_mes_achats2 .btnTxt.one-third:hover,
-.case_objet.btn_voir_plus.btnTxt:hover {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
-}
-
-.btnTxt[onclick*="changeMenu(this, '#resume_compte');"]:hover,
-.btnTxt[onclick*="changeMenu(this, '#inventaire_compte');"]:hover,
-.btnTxt[onclick*="changeMenu(this, '#credits_compte');"]:hover,
-.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover,
-#transfert_pills .btnTxt:hover,
-#db_mes_achats1 .informations .btnTxt:hover {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
-}
-
-.btnTxt[id*="nm_edit_description_"]:hover {
-    background: var(--couleur-background) !important;
-    color: var(--couleur-primaire) !important;
-}
-
-.grid_head_travail_logement .btn.link.infoAide.select,
-.grid_head_travail_logement .btn.link.infoAide:hover {
-    background: var(--couleur-background) !important;
-    color: var(--couleur-primaire) !important;
-}
-
 #acc_carte_content {
-    background: var(--couleur-background) !important;
     box-shadow: 15px 15px 75px inset var(--couleur-primaire),
 			-15px -15px 75px inset var(--couleur-primaire) !important;
-}
-
-#acc_carte {
-    box-shadow: none !important;
-}
-
-.evilBox {
-    background: #04040421;
-    border: 1px solid var(--couleur-primaire);
-}
-
-#stockInventaire.hover,
-#stockInventaire:hover,
-#stockInventaire.selected,
-#ciseauxInventaire.hover,
-#ciseauxInventaire.selected,
-#ciseauxInventaire:hover,
-#poubelleInventaire.hover,
-#poubelleInventaire:hover,
-#poubelleInventaire.selected,
-#statsInventaire.hover,
-#statsInventaire:hover,
-#statsInventaire.selected,
-#visiofwi_open:hover,
-#visiofwi_open.selected {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
 }
 
 #zone_dataBox .meuble_inventaire .case_objet.linkBox_vide {
     border-color: var(--couleur-primaire);
 }
+
+.content:has(> form.message_nouveau),
+#db_crier_message.dataBox,
+#db_changement_infos_entreprise,
+#db_batiment_gestion_entreprise,
+#db_creation_poste_entreprise,
+#db_gestion_poste_entreprise,
+.dataBox[id^="db_fouille_meuble_"],
+.dataBox[id^="db_panneau_"],
+#db_mes_achats1,
+#db_mes_achats2,
+#db_actions_speciales,
+.dataBox[id^="db_rpbook"],
+#db_portable_device,
+#db_liste_prisonnier,
+#db_historique_cristaux,
+#db_imperial_data {
+    box-shadow: inset 0 0 8px var(--couleur-primaire);
+}
+
+.dataBox[id^="db_message_"] .content {
+    box-shadow: inset 0 0 25px 10px var(--couleur-primaire);
+}
+
+.dataBox .close,
+.dataBox .reduce,
+#db_group_dashboard,
+#db_wages.dataBox.focused.ui-draggable,
+#db_wages.dataBox.ui-draggable {
+    box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
+}
+
+/* ==============================
+   COULEUR SECONDAIRE
+============================== */
 
 #zone_fiche #statistiques li > .infos_desc_1,
 #zone_fiche .barre_border .fa-caret-right,
@@ -451,18 +420,14 @@ svg {
 #zone_messagerie #display_messagerie,
 #zone_carnet .infoAide,
 #dc-carnet-agenda-button-v140{
-    background: var(--couleur-secondaire);
+    background: var(--couleur-secondaire) !important;
 }
 
 #zone_fiche #txt_credits em {
     color: var(--couleur-secondaire);
 }
 
-.zone_conteneurs_displayed .conteneur .conteneur_content {
-    background-color: var(--couleur-secondaire);
-    border-color: var(--couleur-bordure-sombre);
-}
-
+.zone_conteneurs_displayed .conteneur .conteneur_content,
 button.text_valider.transition3s {
     background-color: var(--couleur-secondaire) !important;
 }
@@ -482,6 +447,59 @@ span.notif-number {
     background: var(--couleur-tertiaire);
 }
 
+/* ==============================
+   BACKGROUNDS GÉNÉRAUX
+============================== */
+
+#consulter_compte:hover,
+#creer_compte:hover,
+#fermer_compte:hover,
+.transfert .action2.link:hover,
+.transfert .action1.link:hover,
+#db_mes_achats1 .btnTxt.one-third:hover,
+#db_mes_achats2 .btnTxt.one-third:hover,
+.case_objet.btn_voir_plus.btnTxt:hover,
+#zone_carnet .btnTxt.selected,
+#zone_carnet .btnTxt:hover,
+#zone_carnet .infoAide:hover,
+#zone_messagerie .btnTxt.selected,
+#zone_messagerie .btnTxt:hover,
+#zone_messagerie #display_messagerie:hover,
+#zone_messagerie #display_messagerie.selected,
+#dc-carnet-agenda-button-v140:hover,
+#dc-carnet-agenda-button-v140.selected,
+.btnTxt[onclick*="changeMenu(this, '#resume_compte');"]:hover,
+.btnTxt[onclick*="changeMenu(this, '#inventaire_compte');"]:hover,
+.btnTxt[onclick*="changeMenu(this, '#credits_compte');"]:hover,
+.btnTxt[onclick*="closeDataBox('db_compte_bancaire');"]:hover,
+#transfert_pills .btnTxt:hover,
+#db_mes_achats1 .informations .btnTxt:hover,
+#stockInventaire.hover,
+#stockInventaire:hover,
+#stockInventaire.selected,
+#ciseauxInventaire.hover,
+#ciseauxInventaire.selected,
+#ciseauxInventaire:hover,
+#poubelleInventaire.hover,
+#poubelleInventaire:hover,
+#poubelleInventaire.selected,
+#statsInventaire.hover,
+#statsInventaire:hover,
+#statsInventaire.selected,
+#visiofwi_open:hover,
+#visiofwi_open.selected,
+#selecteur_local .label,
+#selecteur_postes .label,
+#gestion_poste .disponible,
+.couleur2:hover,
+#ingame #bandeau ul.menus ul li:hover {
+    color: var(--couleur-background) !important;
+}
+
+.btnTxt[id*="nm_edit_description_"]:hover,
+.grid_head_travail_logement .btn.link.infoAide.select,
+.grid_head_travail_logement .btn.link.infoAide:hover,
+#acc_carte_content,
 #db_group_dashboard,
 #db_wages.dataBox.focused.ui-draggable,
 #db_wages.dataBox.ui-draggable,
@@ -505,7 +523,19 @@ form .mediumSelectInputOptions,
 .deck_type_2 .deck_main,
 .deck_type_3 .deck_main,
 .deck_type_4 .deck_main,
-.deck_type_5 .deck_main {
+.deck_type_5 .deck_main,
+textarea[name^="comment_histo_"],
+#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
+#batiment_gestion,
+#liste_stocks .logement_minimap,
+.dataBox[id^="db_message_"] .content,
+#zone_fiche #statistiques li .infos,
+#dc-carnet-agenda-panel-v140 button,
+#dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
+#dc-carnet-agenda-day-modal-v140 button,
+#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
+#batiment_gestion,
+#liste_stocks .logement_minimap {
     background: var(--couleur-background) !important;
 }
 
@@ -514,16 +544,7 @@ ul.comments {
 }
 
 textarea[name^="comment_histo_"] {
-    background: var(--couleur-background) !important;
-    border: none !important;
     border-left: 10px solid var(--couleur-background) !important;
-}
-
-#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
-#batiment_gestion,
-#liste_stocks .logement_minimap {
-    background: var(--couleur-background) !important;
-    border: 1px solid var(--couleur-primaire);
 }
 
 .content:has(> form.message_nouveau),
@@ -541,22 +562,71 @@ textarea[name^="comment_histo_"] {
 #db_portable_device,
 #db_liste_prisonnier,
 #db_historique_cristaux,
-#db_imperial_data {
+#db_imperial_data,
+.dataBox .close,
+.dataBox .reduce {
     background-color: var(--couleur-background) !important;
-    box-shadow: inset 0 0 8px var(--couleur-primaire);
+}
+
+/* ==============================
+   AJUSTEMENTS DIVERS
+============================== */
+
+.case_objet,
+#zone_messagerie #display_messagerie,
+#zone_carnet .btnTxt,
+#zone_messagerie .btnTxt,
+#zone_carnet .infoAide,
+#zone_chat #onglets_chat li.selected,
+.quete_tab.btnTxt,
+.quete_aide,
+#db_group_dashboard,
+#dc-carnet-agenda-button-v140 {
+    box-shadow: var(--ombre-neon) !important;
+}
+
+#zone_carnet .btnTxt.selected,
+#zone_carnet .btnTxt:hover,
+#zone_carnet .infoAide:hover,
+#zone_messagerie .btnTxt.selected,
+#zone_messagerie .btnTxt:hover,
+#zone_messagerie #display_messagerie:hover,
+#zone_messagerie #display_messagerie.selected,
+#dc-carnet-agenda-button-v140:hover,
+#dc-carnet-agenda-button-v140.selected {
+    box-shadow: var(--ombre-neon-sombre) !important;
+}
+
+.btn_message_gradient {
+    box-shadow: none !important;
+}
+
+#dc-carnet-agenda-panel-v140,
+#dc-carnet-agenda-modal-v140 .dc-agenda-modal-box,
+#dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box {
+    background: #1c1c1c !important;
+}
+
+#acc_carte {
+    box-shadow: none !important;
+}
+
+.evilBox {
+    background: #04040421;
+}
+
+.zone_conteneurs_displayed .conteneur .conteneur_content {
+    border-color: var(--couleur-bordure-sombre);
+}
+
+textarea[name^="comment_histo_"] {
+    border: none !important;
 }
 
 .inventaire_content #statsInventaire,
 .dataBox.dbtype1,
 #stockInventaire.selected {
     background: none !important;
-}
-
-#dc-carnet-agenda-panel-v140 button,
-#dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
-#dc-carnet-agenda-day-modal-v140 button {
-    border: 1px solid var(--couleur-primaire) !important;
-    background: var(--couleur-background) !important;
 }
 
 #dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
@@ -566,19 +636,6 @@ textarea[name^="comment_histo_"] {
 #zone_rewardBox .label,
 #zone_rewardBox .competences {
     background: none;
-}
-
-#zone_fiche #statistiques li .infos {
-    background: var(--couleur-background);
-    border: 1px solid var(--couleur-primaire);
-}
-
-#selecteur_local .label,
-#selecteur_postes .label,
-#gestion_poste .disponible,
-.couleur2:hover,
-#ingame #bandeau ul.menus ul li:hover {
-    color: var(--couleur-background);
 }
 
 #zone_chat .more,
@@ -600,14 +657,6 @@ textarea[name^="comment_histo_"] {
 #quete_titre_texte {
     font-family: var(--police-interface);
     font-size: 1rem;
-}
-
-.dataBox .close,
-.dataBox .reduce,
-#db_group_dashboard,
-#db_wages.dataBox.focused.ui-draggable,
-#db_wages.dataBox.ui-draggable {
-    box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
 }
 
 .quete_aide {
@@ -641,9 +690,4 @@ div[id^="db_message_"] div[id^="convers_"],
 
 .dataBox .message .zone_conversation .conversation .ligne1 {
     color: #fff;
-}
-
-.dataBox[id^="db_message_"] .content {
-    background: var(--couleur-background);
-    box-shadow: inset 0 0 25px 10px var(--couleur-primaire);
 }
