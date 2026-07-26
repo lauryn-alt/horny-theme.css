@@ -448,7 +448,8 @@ svg {
 #zone_dataBox .cercle_dashboard .encart,
 #zone_dataBox .cercle_dashboard .nav_elts,
 #zone_dataBox .cercle_dashboard .navigation li,
-.btnTxt {
+.btnTxt,
+#menu_actions .action_perso .inset_action_perso {
     background: var(--couleur-secondaire);
 }
 
