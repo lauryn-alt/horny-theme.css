@@ -855,3 +855,204 @@ div[id^="db_message_"] div[id^="convers_"],
     border-right-color: var(--couleur-primaire) !important;
     border-bottom-color: var(--couleur-primaire) !important;
 }
+
+/* ==============================================================
+   COMPATIBILITÉ : AITL MÉMOIRE (v1.3.2)
+   Palette pilotée par les variables du Thème Horny.
+   À placer après les autres règles pour surcharger le thème AITL.
+   Les balises [couleur=...] et couleurs de contenu volontairement
+   choisies par les joueurs ne sont pas modifiées.
+   ============================================================== */
+
+/* Palette dérivée : modifiable indépendamment si nécessaire */
+:root {
+    --aitl-fond: var(--couleur-background);
+    --aitl-panneau: var(--couleur-background);
+    --aitl-entete: var(--couleur-secondaire);
+    --aitl-menu: var(--couleur-secondaire);
+    --aitl-menu-survol: var(--couleur-primaire);
+    --aitl-texte: var(--couleur-tertiaire);
+    --aitl-lien: var(--couleur-primaire);
+    --aitl-bordure: var(--couleur-bordure-sombre);
+    --aitl-champ: var(--couleur-background);
+    --aitl-bouton: var(--couleur-secondaire);
+    --aitl-bouton-survol: var(--couleur-primaire);
+}
+
+/* Fenêtre principale : conserver les motifs et reflets de Mémoire */
+#zone_dataBox .aitl,
+.dataBox .aitl {
+    color: var(--aitl-texte) !important;
+    font-family: var(--police-interface);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.045), transparent 28%),
+        radial-gradient(circle at 85% 75%, color-mix(in srgb, var(--couleur-primaire) 18%, transparent), transparent 35%),
+        repeating-linear-gradient(135deg, rgba(255,255,255,.018) 0 1px, transparent 1px 7px),
+        var(--aitl-fond) !important;
+}
+#zone_dataBox .aitl::before,
+.dataBox .aitl::before {
+    border-color: var(--aitl-bordure) !important;
+}
+
+/* Panneaux et zones de contenu */
+#zone_dataBox .aitl .navigation,
+#zone_dataBox .aitl .actions,
+#zone_dataBox .aitl .principal,
+#zone_dataBox .aitl .principal .in,
+#zone_dataBox .aitl .aitl_page,
+.dataBox .aitl .navigation,
+.dataBox .aitl .actions,
+.dataBox .aitl .principal,
+.dataBox .aitl .principal .in,
+.dataBox .aitl .aitl_page {
+    background:
+        linear-gradient(180deg, rgba(255,255,255,.055), transparent 38%),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.020) 0 1px, transparent 1px 5px),
+        repeating-linear-gradient(0deg, rgba(0,0,0,.07) 0 1px, transparent 1px 6px),
+        var(--aitl-panneau) !important;
+    color: var(--aitl-texte) !important;
+}
+#zone_dataBox .aitl .principal .texte,
+.dataBox .aitl .principal .texte {
+    color: var(--aitl-texte) !important;
+}
+
+/* En-têtes */
+#zone_dataBox .aitl .navigation > .titre,
+#zone_dataBox .aitl .actions > .titre,
+#zone_dataBox .aitl .aitl_page > .titre,
+#zone_dataBox .aitl .aitl_page.annonce > .titre,
+.dataBox .aitl .navigation > .titre,
+.dataBox .aitl .actions > .titre,
+.dataBox .aitl .aitl_page > .titre,
+.dataBox .aitl .aitl_page.annonce > .titre {
+    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-entete) !important;
+    color: var(--aitl-texte) !important;
+    border-color: var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl .aitl_page.annonce .texte .titre,
+.dataBox .aitl .aitl_page.annonce .texte .titre {
+    background: transparent !important;
+    color: var(--aitl-texte) !important;
+}
+
+/* Navigation et survol */
+#zone_dataBox .aitl .menu,
+.dataBox .aitl .menu {
+    background: linear-gradient(180deg, rgba(255,255,255,.045), transparent 55%), var(--aitl-menu) !important;
+    color: var(--aitl-texte) !important;
+}
+#zone_dataBox .aitl .menu:hover,
+.dataBox .aitl .menu:hover {
+    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-menu-survol) !important;
+    color: var(--aitl-fond) !important;
+}
+
+/* Liens automatiques et liens natifs */
+#zone_dataBox .aitl a,
+#zone_dataBox .aitl .link,
+#zone_dataBox .aitl .aitl-auto-link,
+.dataBox .aitl a,
+.dataBox .aitl .link,
+.dataBox .aitl .aitl-auto-link {
+    color: var(--aitl-lien) !important;
+}
+
+/* Champs de saisie : annonces et offres */
+#zone_dataBox .aitl input,
+#zone_dataBox .aitl textarea,
+#zone_dataBox .aitl select,
+.dataBox .aitl input,
+.dataBox .aitl textarea,
+.dataBox .aitl select {
+    background: var(--aitl-champ) !important;
+    color: var(--aitl-texte) !important;
+    border-color: var(--couleur-primaire) !important;
+    accent-color: var(--couleur-primaire);
+}
+#zone_dataBox .aitl input::placeholder,
+#zone_dataBox .aitl textarea::placeholder,
+.dataBox .aitl input::placeholder,
+.dataBox .aitl textarea::placeholder {
+    color: var(--aitl-texte) !important;
+    opacity: .6;
+}
+/* Le script Mémoire impose le blanc sur certains champs spécifiques. */
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"],
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"] *,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .nouvelle_annonce_texte textarea,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"] *,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"] *,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"] * {
+    color: var(--aitl-texte) !important;
+}
+
+/* Boutons : création, validation, offres, balises */
+#zone_dataBox .aitl button,
+#zone_dataBox .aitl input[type="button"],
+#zone_dataBox .aitl input[type="submit"],
+#zone_dataBox .aitl .bigValidInput,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+.dataBox .aitl button,
+.dataBox .aitl input[type="button"],
+.dataBox .aitl input[type="submit"],
+.dataBox .aitl .bigValidInput,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button {
+    background: var(--aitl-bouton) !important;
+    color: var(--aitl-texte) !important;
+    border-color: var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl button:hover,
+#zone_dataBox .aitl input[type="button"]:hover,
+#zone_dataBox .aitl input[type="submit"]:hover,
+#zone_dataBox .aitl .bigValidInput:hover,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput:hover,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid:hover,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput:hover,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover,
+.dataBox .aitl button:hover,
+.dataBox .aitl .bigValidInput:hover,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover {
+    background: var(--aitl-bouton-survol) !important;
+    color: var(--aitl-fond) !important;
+}
+
+/* Prévisualisation : les couleurs des balises restent prioritaires */
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
+.dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
+    background: var(--aitl-champ) !important;
+    color: var(--aitl-texte) !important;
+    border-color: var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox b,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox i,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox .parsed-title,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox .parsed-center,
+.dataBox .aitl .aitl_page.nouvelle_annonce .previewBox b,
+.dataBox .aitl .aitl_page.nouvelle_annonce .previewBox i {
+    color: inherit;
+}
+
+/* Barres de défilement */
+#zone_dataBox .aitl .aitl_page,
+.dataBox .aitl .aitl_page {
+    scrollbar-color: var(--couleur-primaire) var(--aitl-fond) !important;
+}
+#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-track,
+.dataBox .aitl .aitl_page::-webkit-scrollbar-track {
+    background: var(--aitl-fond) !important;
+}
+#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-thumb,
+.dataBox .aitl .aitl_page::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(0,0,0,.20)), var(--couleur-primaire) !important;
+    border-color: var(--aitl-fond) !important;
+}
+
+/* Les images et leurs proportions sont gérées par AITL Mémoire. */
