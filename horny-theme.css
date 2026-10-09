@@ -691,3 +691,167 @@ div[id^="db_message_"] div[id^="convers_"],
 .dataBox .message .zone_conversation .conversation .ligne1 {
     color: #fff;
 }
+
+/* ==============================================================
+   COMPATIBILITÉ : AGENDA PERSO DE MIKA (v2.1-solo)
+   Les variables sont pilotées par Thème Horny.
+   Ce bloc surcharge uniquement l'apparence de l'Agenda.
+   =============================================================== */
+
+/* Fenêtre, typographie et panneau de consultation */
+#dc-agenda-panel,
+#dc-agenda-panel .dc-day-modal {
+    background: var(--couleur-background) !important;
+    color: var(--couleur-tertiaire) !important;
+    font-family: var(--police-interface) !important;
+}
+#dc-agenda-panel {
+    border: 1px solid var(--couleur-primaire) !important;
+    box-shadow: var(--ombre-neon) !important;
+}
+#dc-agenda-topbar,
+#dc-agenda-tabs {
+    background: var(--couleur-secondaire) !important;
+    border-bottom: 1px solid var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-panel-section,
+#dc-agenda-panel .dc-import-row {
+    border-bottom-color: var(--couleur-primaire) !important;
+}
+
+/* Bouton flottant */
+#dc-agenda-toggle {
+    background: var(--couleur-background) !important;
+    color: var(--couleur-primaire) !important;
+    border-color: var(--couleur-primaire) !important;
+    box-shadow: var(--ombre-neon) !important;
+    font-family: var(--police-interface) !important;
+}
+#dc-agenda-toggle:hover { box-shadow: var(--ombre-neon-sombre) !important; }
+
+/* Titres, accents, navigation, liens et onglet actif */
+#dc-agenda-topbar b,
+#dc-agenda-panel .dc-tab.active,
+#dc-agenda-panel .dc-cal-title,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-day-modal-back,
+#dc-agenda-panel .dc-day-modal-title,
+#dc-agenda-panel .dc-evt-title,
+#dc-agenda-panel .dc-evt-share-btn,
+#dc-agenda-panel .dc-panel-section h4,
+#dc-agenda-panel .dc-todo-note-btn.has-note,
+#dc-agenda-panel .dc-todo-footer span.link,
+#dc-agenda-panel .dc-status-msg,
+#dc-agenda-panel #select-export-filter-clear {
+    color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-tab.active { border-bottom-color: var(--couleur-primaire) !important; }
+#dc-agenda-panel .dc-tab:hover,
+#dc-agenda-panel .dc-tab:not(.active),
+#dc-agenda-close,
+#dc-agenda-panel .dc-cal-toolbar,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-upcoming-title,
+#dc-agenda-panel .dc-cal-weekdays span,
+#dc-agenda-panel .dc-upcoming-empty,
+#dc-agenda-panel .dc-empty,
+#dc-agenda-panel .dc-todo-footer,
+#dc-agenda-panel .dc-todo-handle,
+#dc-agenda-panel .dc-todo-note-btn,
+#dc-agenda-panel .dc-panel-section p,
+#dc-agenda-panel .dc-evt-note,
+#dc-agenda-panel .dc-todo-note-text,
+#dc-agenda-panel .dc-day-num,
+#dc-agenda-panel .dc-evt-field b {
+    color: var(--couleur-tertiaire) !important;
+}
+
+/* Surfaces des cellules, cartes, formulaires et actions */
+#dc-agenda-panel .dc-day-cell,
+#dc-agenda-panel .dc-add-form,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-add-btn,
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label,
+.dc-agenda-share-btn {
+    background: var(--couleur-secondaire) !important;
+}
+#dc-agenda-panel .dc-day-cell:hover,
+#dc-agenda-panel .dc-day-cell.today {
+    border-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-day-cell.today {
+    background: var(--couleur-secondaire) !important;
+    box-shadow: inset 0 0 0 1px var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-upcoming-row:hover,
+#dc-agenda-panel .dc-cal-nav:hover,
+#dc-agenda-panel .dc-cal-today-btn:hover,
+#dc-agenda-panel .dc-add-btn:hover,
+#dc-agenda-panel .dc-btn.secondary:hover,
+#dc-agenda-panel .dc-file-label:hover,
+.dc-agenda-share-btn:hover {
+    background: var(--couleur-secondaire) !important;
+    box-shadow: inset 0 0 5px var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-add-form,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label {
+    border-color: var(--couleur-primaire) !important;
+}
+/* Les bordures de gauche colorées sont définies directement par Agenda perso.
+   Ne pas les surcharger : elles identifient les catégories. */
+
+/* Champs de saisie et menus déroulants */
+#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#dc-agenda-panel textarea,
+#dc-agenda-panel select {
+    background: var(--couleur-background) !important;
+    color: var(--couleur-tertiaire) !important;
+    border: 1px solid var(--couleur-primaire) !important;
+    accent-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel input::placeholder,
+#dc-agenda-panel textarea::placeholder { color: var(--couleur-tertiaire) !important; opacity: .55; }
+#dc-agenda-panel input[type="checkbox"],
+#dc-agenda-panel input[type="radio"] { accent-color: var(--couleur-primaire) !important; }
+#dc-agenda-panel .dc-add-form select option { background: var(--couleur-background) !important; color: var(--couleur-tertiaire) !important; }
+
+/* Boutons et actions */
+#dc-agenda-panel .dc-add-btn,
+.dc-agenda-share-btn {
+    border-color: var(--couleur-primaire) !important;
+    color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-btn:not(.secondary),
+#dc-agenda-panel .dc-add-form button,
+#dc-agenda-panel .dc-todo-form button {
+    background: var(--couleur-primaire) !important;
+    color: var(--couleur-background) !important;
+}
+#dc-agenda-panel .dc-btn:not(.secondary):hover,
+#dc-agenda-panel .dc-add-form button:hover,
+#dc-agenda-panel .dc-todo-form button:hover { filter: brightness(1.12); }
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label { color: var(--couleur-tertiaire) !important; }
+#dc-agenda-panel .dc-badge-local {
+    background: var(--couleur-secondaire) !important;
+    color: var(--couleur-primaire) !important;
+    border-color: var(--couleur-primaire) !important;
+}
+
+/* Bouton de partage dans les messages du forum */
+.dc-agenda-share-btn { font-family: var(--police-interface) !important; }
+.dc-agenda-share-btn.added { color: var(--couleur-tertiaire) !important; opacity: .7; }
+
+/* Les pastilles de catégories, les dates et les boutons de suppression
+   gardent volontairement leurs couleurs propres. */
+#dc-agenda-panel .dc-evt-card,
+#dc-agenda-panel .dc-todo-item {
+    border-top-color: var(--couleur-primaire) !important;
+    border-right-color: var(--couleur-primaire) !important;
+    border-bottom-color: var(--couleur-primaire) !important;
+}
