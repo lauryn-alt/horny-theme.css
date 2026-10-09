@@ -1068,3 +1068,10 @@ div[id^="db_message_"] div[id^="convers_"],
     border-bottom: 1px solid var(--couleur-primaire) !important;
     color: var(--couleur-primaire) !important;
 }
+
+/* Corporation : cellule sélectionnée */
+#zone_dataBox .aitl .table_entete td.selected {
+    border-top: 1px solid var(--couleur-primaire) !important;
+    border-bottom: 1px solid var(--couleur-primaire) !important;
+    color: var(--couleur-primaire) !important;
+}
