@@ -1143,3 +1143,13 @@ form .mediumSelectInputOptions .enabled,
 form .variableSelectInputOptions .enabled {
     background: var(--couleur-background) !important;
 }
+
+/* Bandeau déroulant des Paramètres */
+#ingame #bandeau ul.menus li ul {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    background: #000 !important;
+    background-color: #000 !important;
+    overflow: visible !important;
+}
