@@ -1143,3 +1143,9 @@ form .mediumSelectInputOptions .enabled,
 form .variableSelectInputOptions .enabled {
     background: var(--couleur-background) !important;
 }
+
+form .longSelectInputOptions .enabled:hover,
+form .mediumSelectInputOptions .enabled:hover,
+form .variableSelectInputOptions .enabled:hover {
+    background: #fff !important;
+}
