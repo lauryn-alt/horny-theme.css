@@ -1137,9 +1137,9 @@ body#ingame .deck_type_3::before {
     color: var(--couleur-primaire) !important;
 }
 
-/* Texte des options activées au survol des listes déroulantes. */
-form .longSelectInputOptions .enabled:hover,
-form .mediumSelectInputOptions .enabled:hover,
-form .variableSelectInputOptions .enabled:hover {
-    color: var(--couleur-background) !important;
+/* Texte des options des listes déroulantes. */
+form .longSelectInputOptions .enabled,
+form .mediumSelectInputOptions .enabled,
+form .variableSelectInputOptions .enabled {
+    background: var(--couleur-background) !important;
 }
