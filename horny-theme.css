@@ -1069,3 +1069,61 @@ div[id^="db_message_"] div[id^="convers_"],
     border-bottom: 1px solid var(--couleur-primaire) !important;
     color: var(--couleur-primaire) !important;
 }
+
+
+/* ==============================================================
+   THÈME HORNY — Gestion / Options et decks
+   ============================================================= */
+
+/* Onglets Gestion et Options : état normal et sélectionné. */
+#entreprise_selecteur #selecteur_gestion:not(.selected) > .label,
+#entreprise_selecteur #selecteur_options:not(.selected) > .label {
+    color: var(--couleur-background) !important;
+}
+#entreprise_selecteur #selecteur_gestion.selected > .label,
+#entreprise_selecteur #selecteur_options.selected > .label {
+    color: var(--couleur-primaire) !important;
+}
+
+/* Barres vertes des rôles : filtrer l'image, sans recolorer le texte.
+   Le sélecteur est limité aux décors utilisant l'image native indiquée. */
+#db_gestion_poste_entreprise #zone_postes .poste :is(.decor1, .decor2, .decor3) {
+    filter: var(--filtre-icones, none) !important;
+}
+
+/* Supprimer le halo extérieur des fenêtres de deck, y compris
+   la lueur intérieure héritée de la règle générale des dataBox. */
+body#ingame #zone_dataBox .dataBox.dbtypedeck,
+body#ingame #zone_dataBox .dataBox.dbtypedeck.focused,
+body#ingame .dataBox.dataBox.dbtypedeck {
+    box-shadow: none !important;
+}
+
+/* Deck de type 4 : dégradé piloté par la palette du thème. */
+body#ingame .deck_type_4 {
+    background: linear-gradient(
+        180deg,
+        var(--couleur-background) 0%,
+        var(--couleur-secondaire) 25%,
+        var(--couleur-primaire) 50%,
+        var(--couleur-secondaire) 75%,
+        var(--couleur-background) 100%
+    ) !important;
+}
+
+/* Deck de type 3 : l'image native est isolée dans un calque filtré.
+   Le filtre n'affecte ni les textes ni les champs du deck. */
+body#ingame .deck_type_3 {
+    position: relative;
+    isolation: isolate;
+    background: none !important;
+}
+body#ingame .deck_type_3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("https://www.dreadcast.net/images/fr/design/box9_fond_0.png") 0 0 repeat;
+    filter: var(--filtre-icones, none) !important;
+    pointer-events: none;
+}
