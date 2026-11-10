@@ -1128,3 +1128,13 @@ body#ingame .dataBox.dataBox.dataBox,
 #dc-fpl-modal.dc-fpl-modal {
     box-shadow: none !important;
 }
+
+/* ==============================
+   COULEUR ALERTE — ICÔNE MESSAGERIE
+   Cible uniquement l’enveloppe de notification.
+============================== */
+
+#zone_messagerie .icon.red svg,
+.icon.red[onclick*="display_messagerie"] svg {
+    fill: var(--couleur-alerte, #d9534f) !important;
+}
