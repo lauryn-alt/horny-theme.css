@@ -362,34 +362,8 @@ svg {
     border-color: var(--couleur-primaire);
 }
 
-.content:has(> form.message_nouveau),
-#db_crier_message.dataBox,
-#db_changement_infos_entreprise,
-#db_batiment_gestion_entreprise,
-#db_creation_poste_entreprise,
-#db_gestion_poste_entreprise,
-.dataBox[id^="db_fouille_meuble_"],
-.dataBox[id^="db_panneau_"],
-#db_mes_achats1,
-#db_mes_achats2,
-#db_actions_speciales,
-.dataBox[id^="db_rpbook"],
-#db_portable_device,
-#db_liste_prisonnier,
-#db_historique_cristaux,
-#db_imperial_data {
-    box-shadow: inset 0 0 8px var(--couleur-primaire);
-}
-
-.dataBox[id^="db_message_"] .content {
-    box-shadow: inset 0 0 25px 10px var(--couleur-primaire);
-}
-
 .dataBox .close,
-.dataBox .reduce,
-#db_group_dashboard,
-#db_wages.dataBox.focused.ui-draggable,
-#db_wages.dataBox.ui-draggable {
+.dataBox .reduce {
     box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
 }
 
@@ -1091,14 +1065,6 @@ div[id^="db_message_"] div[id^="convers_"],
     filter: var(--filtre-icones, none) !important;
 }
 
-/* Supprimer le halo extérieur des fenêtres de deck, y compris
-   la lueur intérieure héritée de la règle générale des dataBox. */
-body#ingame #zone_dataBox .dataBox.dbtypedeck,
-body#ingame #zone_dataBox .dataBox.dbtypedeck.focused,
-body#ingame .dataBox.dataBox.dbtypedeck {
-    box-shadow: none !important;
-}
-
 /* Deck de type 4 : dégradé piloté par la palette du thème. */
 body#ingame .deck_type_4 {
     background: linear-gradient(
@@ -1152,4 +1118,12 @@ form .variableSelectInputOptions .enabled {
     background: #000 !important;
     background-color: #000 !important;
     overflow: visible !important;
+}
+
+/* Fenêtres : suppression des halos, sans toucher aux ombres des boutons et icônes. */
+body#ingame #zone_dataBox .dataBox.dataBox,
+body#ingame #zone_dataBox .dataBox.dataBox.focused,
+body#ingame .dataBox.dataBox.dataBox,
+#dc-fpl-modal.dc-fpl-modal {
+    box-shadow: none !important;
 }
