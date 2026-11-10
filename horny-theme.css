@@ -1127,3 +1127,19 @@ body#ingame .deck_type_3::before {
     filter: var(--filtre-icones, none) !important;
     pointer-events: none;
 }
+
+/* ==============================================================
+   v1.7.7 — Infobulles de rôles et listes de licenciement
+   ============================================================== */
+
+/* Libellés de hiérarchie dans l'infobulle des rôles. */
+#gestion_poste .info_job > table:first-of-type td.type1 {
+    color: var(--couleur-primaire) !important;
+}
+
+/* Texte des options activées au survol des listes déroulantes. */
+form .longSelectInputOptions .enabled:hover,
+form .mediumSelectInputOptions .enabled:hover,
+form .variableSelectInputOptions .enabled:hover {
+    color: var(--couleur-background) !important;
+}
