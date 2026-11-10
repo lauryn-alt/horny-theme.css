@@ -1129,12 +1129,4 @@ body#ingame .dataBox.dataBox.dataBox,
     box-shadow: none !important;
 }
 
-/* ==============================
-   COULEUR ALERTE
-============================== */
 
-.red,
-body#ingame .red,
-body#ingame #zone_dataBox .red {
-    color: var(--couleur-alerte, #d9534f) !important;
-}
