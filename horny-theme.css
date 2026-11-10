@@ -1132,8 +1132,8 @@ body#ingame .deck_type_3::before {
    v1.7.7 — Infobulles de rôles et listes de licenciement
    ============================================================== */
 
-/* Libellés de hiérarchie dans l'infobulle des rôles. */
-#gestion_poste .info_job > table:first-of-type td.type1 {
+/* Infobulles des rôles : libellés en couleur primaire */
+.infoBox .info_job .type1 {
     color: var(--couleur-primaire) !important;
 }
 
@@ -1142,10 +1142,4 @@ form .longSelectInputOptions .enabled,
 form .mediumSelectInputOptions .enabled,
 form .variableSelectInputOptions .enabled {
     background: var(--couleur-background) !important;
-}
-
-form .longSelectInputOptions .enabled:hover,
-form .mediumSelectInputOptions .enabled:hover,
-form .variableSelectInputOptions .enabled:hover {
-    background: #fff !important;
 }
