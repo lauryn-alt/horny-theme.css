@@ -295,15 +295,10 @@ body#ingame #combat_turn_order {
 #zone_dataBox .aitl button,
 #zone_dataBox .aitl input[type="button"],
 #zone_dataBox .aitl input[type="submit"],
-#zone_dataBox .aitl .bigValidInput,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
 .dataBox .aitl button,
 .dataBox .aitl input[type="button"],
 .dataBox .aitl input[type="submit"],
-.dataBox .aitl .bigValidInput,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
 .dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
@@ -356,13 +351,8 @@ body#ingame #combat_turn_order {
 #zone_dataBox .aitl button:hover,
 #zone_dataBox .aitl input[type="button"]:hover,
 #zone_dataBox .aitl input[type="submit"]:hover,
-#zone_dataBox .aitl .bigValidInput:hover,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput:hover,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid:hover,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput:hover,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover,
 .dataBox .aitl button:hover,
-.dataBox .aitl .bigValidInput:hover,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover {
     background: var(--aitl-bouton-survol) !important;
 }
@@ -400,7 +390,6 @@ body#ingame .deck_type_4 {
 #zone_dataBox .cercle_dashboard .nav_elts,
 #zone_dataBox .cercle_dashboard .navigation li,
 .btnTxt,
-#menu_actions .action_perso .inset_action_perso,
 #zone_carnet .btnTxt,
 #zone_messagerie .btnTxt,
 #zone_messagerie #display_messagerie,
@@ -451,15 +440,10 @@ button.text_valider.transition3s {
 #zone_dataBox .aitl button,
 #zone_dataBox .aitl input[type="button"],
 #zone_dataBox .aitl input[type="submit"],
-#zone_dataBox .aitl .bigValidInput,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
 .dataBox .aitl button,
 .dataBox .aitl input[type="button"],
 .dataBox .aitl input[type="submit"],
-.dataBox .aitl .bigValidInput,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button {
     background: var(--aitl-bouton) !important;
 }
@@ -553,15 +537,10 @@ span.notif-number {
 #zone_dataBox .aitl button,
 #zone_dataBox .aitl input[type="button"],
 #zone_dataBox .aitl input[type="submit"],
-#zone_dataBox .aitl .bigValidInput,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
 .dataBox .aitl button,
 .dataBox .aitl input[type="button"],
 .dataBox .aitl input[type="submit"],
-.dataBox .aitl .bigValidInput,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
 .dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
@@ -676,7 +655,8 @@ textarea[name^="comment_histo_"],
 form .longSelectInputOptions .enabled,
 form .mediumSelectInputOptions .enabled,
 form .variableSelectInputOptions .enabled,
-.turn_rank {
+.turn_rank,
+#menu_actions .action_perso .inset_action_perso {
     background: var(--couleur-background) !important;
 }
 .content:has(> form.message_nouveau),
@@ -716,13 +696,8 @@ form .variableSelectInputOptions .enabled,
 #zone_dataBox .aitl button:hover,
 #zone_dataBox .aitl input[type="button"]:hover,
 #zone_dataBox .aitl input[type="submit"]:hover,
-#zone_dataBox .aitl .bigValidInput:hover,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput:hover,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid:hover,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput:hover,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover,
 .dataBox .aitl button:hover,
-.dataBox .aitl .bigValidInput:hover,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover {
     color: var(--aitl-fond) !important;
 }
@@ -934,9 +909,35 @@ form div.sujet .left {
 }
 body#ingame,
 body#ingame :is(input, textarea, select, option, button),
-body#ingame :is(p, a, label, li, td, th, h1, h2, h3, h4, h5, h6, blockquote, pre, small, strong, em, b, i),
+body#ingame :is(p, a, label, li, td, th, h1, h2, h3, h4, h5, h6, blockquote, pre, small, strong, em, b, i:not(.fa):not(.fas):not(.far):not(.fab):not([class^="fa-"]):not([class*=" fa-"]):not([class^="icofont-"]):not([class*=" icofont-"])),
 body#ingame :is(.dataBox, .zone_conversation, .conversation, .message, .contenu, .ligne1, .ligne2, .titre, .description) {
     font-family: var(--police-interface, Geneva, Verdana, sans-serif) !important;
+}
+
+
+/* Protection des polices d'icônes : inventaire et interface.
+   Les libellés Messages, Nouveau, Contacts et Adresses restent personnalisables. */
+body#ingame i[class^="icofont-"],
+body#ingame i[class*=" icofont-"],
+body#ingame #ciseauxInventaire i,
+body#ingame #poubelleInventaire i,
+body#ingame #stockInventaire i {
+    font-family: "IcoFont" !important;
+    font-weight: normal !important;
+}
+body#ingame i.fas,
+body#ingame i.fa,
+body#ingame #statsInventaire i.fas {
+    font-family: "Font Awesome 5 Free", "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+body#ingame i.far {
+    font-family: "Font Awesome 5 Free", "Font Awesome 6 Free" !important;
+    font-weight: 400 !important;
+}
+body#ingame i.fab {
+    font-family: "Font Awesome 5 Brands", "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
 }
 
 /* AJUSTEMENTS */
