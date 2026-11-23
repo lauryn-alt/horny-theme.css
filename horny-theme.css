@@ -825,7 +825,8 @@ form div.sujet .left,
 #atelier_form .retour,
 #atelier_form .valider.link,
 #zone_rewardBox .footer .close,
-form .mediumSelectInput .right {
+form .mediumSelectInput .right,
+#zone_dataBox .aitl::before {
     filter: var(--filtre-icones) !important;
 }
 #fondVille1,
