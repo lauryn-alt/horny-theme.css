@@ -804,6 +804,8 @@ textarea[name^="comment_histo_"] {
 }
 
 /* FILTRES */
+/* Bordure illustrée AITL : suit le filtre de couleur des icônes. */
+#zone_dataBox .aitl::before,
 #zone_travail .icon,
 #zone_chat .icon,
 #critere_selection .taille1,
