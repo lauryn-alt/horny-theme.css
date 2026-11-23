@@ -1,7 +1,4 @@
-/* ==============================
-   COULEURS MODIFIABLES
-============================== */
-
+/* VARIABLES DU THÈME */
 :root {
     --couleur-primaire: #95bb41;
     --couleur-secondaire: #59663c9c;
@@ -16,8 +13,6 @@
     --img-zone-droite: url("https://i.imgur.com/Aygz15c.png");
     --img-inventaire: url("https://i.imgur.com/FxN9Quz.png");
     --img-hologramme: url("https://i.imgur.com/P2DGHZy.png");
-
-    /* Images natives de DreadCast remplaçables selon la couleur choisie */
     --dc-img-stocks-mise-en-vente: url("https://www.dreadcast.net/images/fr/design/fond_stocks_mev3.png");
     --dc-img-technopole: url("https://www.dreadcast.net/images/fr/design/fond_technopole.png");
     --dc-img-icones: url("https://www.dreadcast.net/images/fr/design/icones/icones.png");
@@ -41,150 +36,26 @@
     --dc-img-champ-select-bord: url("https://www.dreadcast.net/images/fr/design/champselect_1_bord.png");
     --filtre-icones: hue-rotate(240deg) saturate(100%) brightness(100%);
     --filtre-fonds: brightness(15%);
-    --ombre-neon: 0 0 2px 0 var(--couleur-ombre-blanche),
-		0 0 10px 0 var(--couleur-primaire),
-		2px 2px 5px -1px var(--couleur-primaire),
-		inset 0 0 3px var(--couleur-ombre-blanche),
-		inset 0 0 5px 0 var(--couleur-primaire);
-    --ombre-neon-sombre: 0 0 2px 0 var(--couleur-ombre-blanche),
-		0 0 10px 0 var(--couleur-background),
-		2px 2px 5px -1px var(--couleur-background),
-		inset 0 0 3px var(--couleur-ombre-blanche),
-		inset 0 0 5px 0 var(--couleur-background);
+    --ombre-neon: 0 0 2px 0 var(--couleur-ombre-blanche), 0 0 10px 0 var(--couleur-primaire), 2px 2px 5px -1px var(--couleur-primaire), inset 0 0 3px var(--couleur-ombre-blanche), inset 0 0 5px 0 var(--couleur-primaire);
+    --ombre-neon-sombre: 0 0 2px 0 var(--couleur-ombre-blanche), 0 0 10px 0 var(--couleur-background), 2px 2px 5px -1px var(--couleur-background), inset 0 0 3px var(--couleur-ombre-blanche), inset 0 0 5px 0 var(--couleur-background);
     --police-interface: Geneva, Verdana, sans-serif;
+    --aitl-fond: var(--couleur-background);
+    --aitl-panneau: var(--couleur-background);
+    --aitl-entete: var(--couleur-secondaire);
+    --aitl-menu: var(--couleur-secondaire);
+    --aitl-menu-survol: var(--couleur-primaire);
+    --aitl-texte: var(--couleur-tertiaire);
+    --aitl-lien: var(--couleur-primaire);
+    --aitl-bordure: var(--couleur-bordure-sombre);
+    --aitl-champ: var(--couleur-background);
+    --aitl-bouton: var(--couleur-secondaire);
+    --aitl-bouton-survol: var(--couleur-primaire);
 }
 
-/* ==============================
-   FILTRES / RECOLORATION
-============================== */
+/* VARIABLES */
 
-#zone_travail .icon,
-#zone_chat .icon,
-#critere_selection .taille1,
-form .counter,
-form .bigValidInput,
-.stat_icone_soif,
-.stat_icone_faim,
-.stat_icone_cr,
-#infos_menu .book-place.selected .icon,
-#infos_menu .book-place:hover .icon,
-#zone_lightBox .lightBox .annuler,
-form div.cible .left,
-form div.sujet .left,
-#critere_selection td.selected,
-#critere_selection td:hover,
-#acc_groupe_1,
-#atelier_form .retour,
-#atelier_form .valider.link,
-#zone_rewardBox .footer .close,
-form .mediumSelectInput .right {
-    filter: var(--filtre-icones) !important;
-}
-
-#fondVille1,
-#fondVille2,
-#fondVille3,
-#fondVille4,
-#fondMaison1,
-#fondMaison2,
-#fondMaison3,
-#fondImmeuble1,
-#fondImmeuble2,
-#fondImmeuble3,
-#fondMort,
-#fondOI,
-#fondEntreprise,
-#fondVide,
-#fondSouterrain {
-    filter: var(--filtre-fonds) !important;
-}
-
-
-/* ==============================
-   IMAGES D'INTERFACE
-============================== */
-
-#zone_quete {
-    position: absolute;
-    bottom: -13%;
-    left: 2%;
-    width: 100%;
-    height: 18%;
-    padding: 12% 0 0 49%;
-    box-sizing: border-box;
-    background: var(--img-quete) 0 0 / contain no-repeat;
-    color: var(--couleur-primaire) !important;
-    line-height: 1.4rem;
-    font-size: min(1.1rem, 14px);
-}
-
-#modif_stocks_form {
-    position: absolute;
-    top: -80px;
-    left: 48px;
-    width: 519px;
-    height: 546px;
-    background: var(--img-stock) 0 0 no-repeat;
-}
-
-#loader {
-    background-image: var(--img-loader) !important;
-}
-
-#zone_chat_bg {
-    background: var(--img-chat) !important;
-    background-size: cover !important;
-}
-
-#zone_droite > .grid > .grid.top {
-    position: relative;
-    height: 100%;
-    max-height: 100%;
-    display: grid;
-    grid-template-columns: 48% 50%;
-    grid-gap: 2%;
-    background: var(--img-zone-droite) 0 0 / contain no-repeat;
-}
-
-#zone_gauche_inventaire {
-    height: 100%;
-    text-transform: uppercase;
-    font: .7rem Arial, sans-serif;
-    background: var(--img-inventaire) 0 0 / contain no-repeat;
-}
-
-.hologram img {
-    content: var(--img-hologramme);
-}
-
-#liste_stocks .stock {
-    background: url(https://i.imgur.com/Oj3vEKj.png) 0 0 no-repeat;
-}
-
-#atelier_form {
-    background: url(https://i.imgur.com/0emEAAm.png) 0 0 no-repeat;
-}
-
-#zone_rewardBox .header {
-    background: var(--dc-img-reward-box-background) 0 0 no-repeat !important;
-}
-
-#zone_rewardBox .main {
-    background: var(--dc-img-reward-box-background) -870px 0 repeat-y !important;
-}
-
-#zone_rewardBox .footer {
-    background: var(--dc-img-reward-box-background) -435px 0 no-repeat !important;
-}
-
-#zone_rewardBox .competences .icone {
-    background-image: var(--dc-img-reward-box-icons) !important;
-}
-
-/* ==============================
-   COULEUR PRIMAIRE
-============================== */
-
+/* COULEUR PRIMAIRE */
+#zone_quete,
 #zone_fiche #txt_titre,
 #zone_fiche #statistiques .infostats .max,
 #ciseauxInventaire,
@@ -232,10 +103,34 @@ form .mediumSelectInputOptions div.type1,
 #chatContent .white > span > em,
 .btnTxt[id*="nm_edit_description_"]:hover,
 .grid_head_travail_logement .btn.link.infoAide.select,
-.grid_head_travail_logement .btn.link.infoAide:hover {
+.grid_head_travail_logement .btn.link.infoAide:hover,
+#dc-agenda-toggle,
+#dc-agenda-topbar b,
+#dc-agenda-panel .dc-tab.active,
+#dc-agenda-panel .dc-cal-title,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-day-modal-back,
+#dc-agenda-panel .dc-day-modal-title,
+#dc-agenda-panel .dc-evt-title,
+#dc-agenda-panel .dc-evt-share-btn,
+#dc-agenda-panel .dc-panel-section h4,
+#dc-agenda-panel .dc-todo-note-btn.has-note,
+#dc-agenda-panel .dc-todo-footer span.link,
+#dc-agenda-panel .dc-status-msg,
+#dc-agenda-panel #select-export-filter-clear,
+#dc-agenda-panel .dc-add-btn,
+.dc-agenda-share-btn,
+#dc-agenda-panel .dc-badge-local,
+#zone_dataBox .aitl .table_entete td.type1,
+#zone_dataBox .aitl .table_entete td.selected,
+#zone_dataBox .aitl .table_entete tr:hover,
+#entreprise_selecteur #selecteur_gestion.selected > .label,
+#entreprise_selecteur #selecteur_options.selected > .label,
+.infoBox .info_job .type1,
+body#ingame .turn_order_title,
+#combat_zone_informations {
     color: var(--couleur-primaire) !important;
 }
-
 #zone_carnet .icon svg,
 #zone_messagerie .icon svg,
 #zone_fiche #barre_experience svg,
@@ -248,7 +143,6 @@ form .mediumSelectInputOptions div.type1,
 svg {
     fill: var(--couleur-primaire);
 }
-
 #zone_fiche .barre_inv,
 #combat_menu > div.active > svg,
 #zone_actions > div.active > svg,
@@ -294,7 +188,6 @@ svg {
 #visiofwi_open.selected {
     background: var(--couleur-primaire);
 }
-
 #chatForm,
 #chatForm .text_valider,
 #chatForm .text_mode,
@@ -332,46 +225,164 @@ svg {
 #dc-carnet-agenda-panel-v140 button,
 #dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
 #dc-carnet-agenda-day-modal-v140 button,
-#zone_fiche #statistiques li .infos {
+#zone_fiche #statistiques li .infos,
+#dc-agenda-panel,
+#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#dc-agenda-panel textarea,
+#dc-agenda-panel select,
+body#ingame #combat_turn_order {
     border: 1px solid var(--couleur-primaire) !important;
 }
-
 #zone_fiche #statistiques li > .infos_desc_1,
 .dataBox .head,
 #db_group_dashboard {
     border-right: 1px solid var(--couleur-primaire);
-    border-bottom: 1px solid var(--couleur-primaire);
-    border-left: 1px solid var(--couleur-primaire);
 }
-
-.dataBox .close,
-.dataBox .reduce {
-	box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
-}
-
+#zone_fiche #statistiques li > .infos_desc_1,
+.dataBox .head,
+#db_group_dashboard,
 #zone_chat .connectes,
 #zone_chat #onglets_chat {
     border-bottom: 1px solid var(--couleur-primaire);
 }
-
-#acc_carte_content {
-    box-shadow: 15px 15px 75px inset var(--couleur-primaire),
-			-15px -15px 75px inset var(--couleur-primaire) !important;
+#zone_fiche #statistiques li > .infos_desc_1,
+.dataBox .head,
+#db_group_dashboard {
+    border-left: 1px solid var(--couleur-primaire);
 }
-
 #zone_dataBox .meuble_inventaire .case_objet.linkBox_vide {
     border-color: var(--couleur-primaire);
 }
-
-.dataBox .close,
-.dataBox .reduce {
-    box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
+#dc-agenda-topbar,
+#dc-agenda-tabs,
+#zone_dataBox .aitl .table_entete td.type1,
+#zone_dataBox .aitl .table_entete td.selected,
+#zone_dataBox .aitl .table_entete tr:hover {
+    border-bottom: 1px solid var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-panel-section,
+#dc-agenda-panel .dc-import-row,
+#dc-agenda-panel .dc-tab.active,
+#dc-agenda-panel .dc-evt-card,
+#dc-agenda-panel .dc-todo-item {
+    border-bottom-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-toggle,
+#dc-agenda-panel .dc-day-cell:hover,
+#dc-agenda-panel .dc-day-cell.today,
+#dc-agenda-panel .dc-add-form,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label,
+#dc-agenda-panel .dc-add-btn,
+.dc-agenda-share-btn,
+#dc-agenda-panel .dc-badge-local,
+#zone_dataBox .aitl .navigation > .titre,
+#zone_dataBox .aitl .actions > .titre,
+#zone_dataBox .aitl .aitl_page > .titre,
+#zone_dataBox .aitl .aitl_page.annonce > .titre,
+.dataBox .aitl .navigation > .titre,
+.dataBox .aitl .actions > .titre,
+.dataBox .aitl .aitl_page > .titre,
+.dataBox .aitl .aitl_page.annonce > .titre,
+#zone_dataBox .aitl input,
+#zone_dataBox .aitl textarea,
+#zone_dataBox .aitl select,
+.dataBox .aitl input,
+.dataBox .aitl textarea,
+.dataBox .aitl select,
+#zone_dataBox .aitl button,
+#zone_dataBox .aitl input[type="button"],
+#zone_dataBox .aitl input[type="submit"],
+#zone_dataBox .aitl .bigValidInput,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+.dataBox .aitl button,
+.dataBox .aitl input[type="button"],
+.dataBox .aitl input[type="submit"],
+.dataBox .aitl .bigValidInput,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
+.dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
+    border-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#dc-agenda-panel textarea,
+#dc-agenda-panel select,
+#dc-agenda-panel input[type="checkbox"],
+#dc-agenda-panel input[type="radio"] {
+    accent-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-btn:not(.secondary),
+#dc-agenda-panel .dc-add-form button,
+#dc-agenda-panel .dc-todo-form button {
+    background: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-evt-card,
+#dc-agenda-panel .dc-todo-item {
+    border-top-color: var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-evt-card,
+#dc-agenda-panel .dc-todo-item {
+    border-right-color: var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl,
+.dataBox .aitl {
+    background: radial-gradient(circle at 15% 20%, rgba(255,255,255,.045), transparent 28%), radial-gradient(circle at 85% 75%, color-mix(in srgb, var(--couleur-primaire) 18%, transparent), transparent 35%), repeating-linear-gradient(135deg, rgba(255,255,255,.018) 0 1px, transparent 1px 7px), var(--aitl-fond) !important;
+}
+#zone_dataBox .aitl .menu:hover,
+.dataBox .aitl .menu:hover {
+    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-menu-survol) !important;
+}
+#zone_dataBox .aitl a,
+#zone_dataBox .aitl .link,
+#zone_dataBox .aitl .aitl-auto-link,
+.dataBox .aitl a,
+.dataBox .aitl .link,
+.dataBox .aitl .aitl-auto-link {
+    color: var(--aitl-lien) !important;
+}
+#zone_dataBox .aitl input,
+#zone_dataBox .aitl textarea,
+#zone_dataBox .aitl select,
+.dataBox .aitl input,
+.dataBox .aitl textarea,
+.dataBox .aitl select {
+    accent-color: var(--couleur-primaire);
+}
+#zone_dataBox .aitl button:hover,
+#zone_dataBox .aitl input[type="button"]:hover,
+#zone_dataBox .aitl input[type="submit"]:hover,
+#zone_dataBox .aitl .bigValidInput:hover,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput:hover,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid:hover,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput:hover,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover,
+.dataBox .aitl button:hover,
+.dataBox .aitl .bigValidInput:hover,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover {
+    background: var(--aitl-bouton-survol) !important;
+}
+#zone_dataBox .aitl .aitl_page,
+.dataBox .aitl .aitl_page {
+    scrollbar-color: var(--couleur-primaire) var(--aitl-fond) !important;
+}
+#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-thumb,
+.dataBox .aitl .aitl_page::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(0,0,0,.20)), var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl .table_entete td.selected,
+#zone_dataBox .aitl .table_entete tr:hover {
+    border-top: 1px solid var(--couleur-primaire) !important;
+}
+body#ingame .deck_type_4 {
+    background: linear-gradient( 180deg, var(--couleur-background) 0%, var(--couleur-secondaire) 25%, var(--couleur-primaire) 50%, var(--couleur-secondaire) 75%, var(--couleur-background) 100% ) !important;
 }
 
-/* ==============================
-   COULEUR SECONDAIRE
-============================== */
-
+/* COULEUR SECONDAIRE */
 #zone_fiche #statistiques li > .infos_desc_1,
 #zone_fiche .barre_border .fa-caret-right,
 .grid_head_travail_logement .btn.link.infoAide,
@@ -394,38 +405,181 @@ svg {
 #zone_messagerie .btnTxt,
 #zone_messagerie #display_messagerie,
 #zone_carnet .infoAide,
-#dc-carnet-agenda-button-v140{
+#dc-carnet-agenda-button-v140,
+#dc-agenda-topbar,
+#dc-agenda-tabs,
+#dc-agenda-panel .dc-day-cell,
+#dc-agenda-panel .dc-add-form,
+#dc-agenda-panel .dc-cal-nav,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-add-btn,
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label,
+.dc-agenda-share-btn,
+#dc-agenda-panel .dc-day-cell.today,
+#dc-agenda-panel .dc-upcoming-row:hover,
+#dc-agenda-panel .dc-cal-nav:hover,
+#dc-agenda-panel .dc-cal-today-btn:hover,
+#dc-agenda-panel .dc-add-btn:hover,
+#dc-agenda-panel .dc-btn.secondary:hover,
+#dc-agenda-panel .dc-file-label:hover,
+.dc-agenda-share-btn:hover,
+#dc-agenda-panel .dc-badge-local {
     background: var(--couleur-secondaire) !important;
 }
-
 #zone_fiche #txt_credits em {
     color: var(--couleur-secondaire);
 }
-
 .zone_conteneurs_displayed .conteneur .conteneur_content,
 button.text_valider.transition3s {
     background-color: var(--couleur-secondaire) !important;
 }
+#zone_dataBox .aitl .navigation > .titre,
+#zone_dataBox .aitl .actions > .titre,
+#zone_dataBox .aitl .aitl_page > .titre,
+#zone_dataBox .aitl .aitl_page.annonce > .titre,
+.dataBox .aitl .navigation > .titre,
+.dataBox .aitl .actions > .titre,
+.dataBox .aitl .aitl_page > .titre,
+.dataBox .aitl .aitl_page.annonce > .titre {
+    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-entete) !important;
+}
+#zone_dataBox .aitl .menu,
+.dataBox .aitl .menu {
+    background: linear-gradient(180deg, rgba(255,255,255,.045), transparent 55%), var(--aitl-menu) !important;
+}
+#zone_dataBox .aitl button,
+#zone_dataBox .aitl input[type="button"],
+#zone_dataBox .aitl input[type="submit"],
+#zone_dataBox .aitl .bigValidInput,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+.dataBox .aitl button,
+.dataBox .aitl input[type="button"],
+.dataBox .aitl input[type="submit"],
+.dataBox .aitl .bigValidInput,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button {
+    background: var(--aitl-bouton) !important;
+}
 
-/* ==============================
-   COULEUR TERTIAIRE
-============================== */
-
+/* COULEUR TERTIAIRE */
 #zone_fiche #statistiques ul > li,
 #zone_fiche #txt_pseudo,
 #chatForm .text_valider,
-#reward_slot_type {
+#reward_slot_type,
+#dc-agenda-panel,
+#dc-agenda-panel .dc-day-modal,
+#dc-agenda-panel .dc-tab:hover,
+#dc-agenda-panel .dc-tab:not(.active),
+#dc-agenda-close,
+#dc-agenda-panel .dc-cal-toolbar,
+#dc-agenda-panel .dc-cal-today-btn,
+#dc-agenda-panel .dc-upcoming-title,
+#dc-agenda-panel .dc-cal-weekdays span,
+#dc-agenda-panel .dc-upcoming-empty,
+#dc-agenda-panel .dc-empty,
+#dc-agenda-panel .dc-todo-footer,
+#dc-agenda-panel .dc-todo-handle,
+#dc-agenda-panel .dc-todo-note-btn,
+#dc-agenda-panel .dc-panel-section p,
+#dc-agenda-panel .dc-evt-note,
+#dc-agenda-panel .dc-todo-note-text,
+#dc-agenda-panel .dc-day-num,
+#dc-agenda-panel .dc-evt-field b,
+#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#dc-agenda-panel textarea,
+#dc-agenda-panel select,
+#dc-agenda-panel input::placeholder,
+#dc-agenda-panel textarea::placeholder,
+#dc-agenda-panel .dc-add-form select option,
+#dc-agenda-panel .dc-btn.secondary,
+#dc-agenda-panel .dc-file-label,
+.dc-agenda-share-btn.added {
     color: var(--couleur-tertiaire) !important;
 }
-
 span.notif-number {
     background: var(--couleur-tertiaire);
 }
+.dataBox .message .zone_conversation .conversation .ligne1 {
+    color: var(--couleur-tertiaire, #fff);
+}
+#zone_dataBox .aitl,
+.dataBox .aitl,
+#zone_dataBox .aitl .navigation,
+#zone_dataBox .aitl .actions,
+#zone_dataBox .aitl .principal,
+#zone_dataBox .aitl .principal .in,
+#zone_dataBox .aitl .aitl_page,
+.dataBox .aitl .navigation,
+.dataBox .aitl .actions,
+.dataBox .aitl .principal,
+.dataBox .aitl .principal .in,
+.dataBox .aitl .aitl_page,
+#zone_dataBox .aitl .principal .texte,
+.dataBox .aitl .principal .texte,
+#zone_dataBox .aitl .navigation > .titre,
+#zone_dataBox .aitl .actions > .titre,
+#zone_dataBox .aitl .aitl_page > .titre,
+#zone_dataBox .aitl .aitl_page.annonce > .titre,
+.dataBox .aitl .navigation > .titre,
+.dataBox .aitl .actions > .titre,
+.dataBox .aitl .aitl_page > .titre,
+.dataBox .aitl .aitl_page.annonce > .titre,
+#zone_dataBox .aitl .aitl_page.annonce .texte .titre,
+.dataBox .aitl .aitl_page.annonce .texte .titre,
+#zone_dataBox .aitl .menu,
+.dataBox .aitl .menu,
+#zone_dataBox .aitl input,
+#zone_dataBox .aitl textarea,
+#zone_dataBox .aitl select,
+.dataBox .aitl input,
+.dataBox .aitl textarea,
+.dataBox .aitl select,
+#zone_dataBox .aitl input::placeholder,
+#zone_dataBox .aitl textarea::placeholder,
+.dataBox .aitl input::placeholder,
+.dataBox .aitl textarea::placeholder,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"],
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"] *,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .nouvelle_annonce_texte textarea,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"] *,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"] *,
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"],
+#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"] *,
+#zone_dataBox .aitl button,
+#zone_dataBox .aitl input[type="button"],
+#zone_dataBox .aitl input[type="submit"],
+#zone_dataBox .aitl .bigValidInput,
+#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
+#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
+#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+.dataBox .aitl button,
+.dataBox .aitl input[type="button"],
+.dataBox .aitl input[type="submit"],
+.dataBox .aitl .bigValidInput,
+.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
+#zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
+.dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
+    color: var(--aitl-texte) !important;
+}
+body#ingame .dataBox .message .zone_conversation .conversation .ligne1,
+body#ingame #zone_fiche #action_actuelle,
+body#ingame #zone_fiche #txt_credits,
+body#ingame .fakeToolTip,
+#liste_messages .content .message_titre,
+#liste_adresses .content li,
+#liste_contacts .content li,
+#liste_messages .content li,
+body#ingame [data-horny-native-white="1"] {
+    color: var(--couleur-tertiaire, #fff) !important;
+}
 
-/* ==============================
-   BACKGROUNDS GÉNÉRAUX
-============================== */
-
+/* COULEUR DE FOND */
 #consulter_compte:hover,
 #creer_compte:hover,
 #fermer_compte:hover,
@@ -467,10 +621,14 @@ span.notif-number {
 #selecteur_postes .label,
 #gestion_poste .disponible,
 .couleur2:hover,
-#ingame #bandeau ul.menus ul li:hover {
+#ingame #bandeau ul.menus ul li:hover,
+#dc-agenda-panel .dc-btn:not(.secondary),
+#dc-agenda-panel .dc-add-form button,
+#dc-agenda-panel .dc-todo-form button,
+#entreprise_selecteur #selecteur_gestion:not(.selected) > .label,
+#entreprise_selecteur #selecteur_options:not(.selected) > .label {
     color: var(--couleur-background) !important;
 }
-
 .btnTxt[id*="nm_edit_description_"]:hover,
 .grid_head_travail_logement .btn.link.infoAide.select,
 .grid_head_travail_logement .btn.link.infoAide:hover,
@@ -508,20 +666,19 @@ textarea[name^="comment_histo_"],
 #dc-carnet-agenda-panel-v140 button,
 #dc-carnet-agenda-modal-v140 button:not(.dc-agenda-color),
 #dc-carnet-agenda-day-modal-v140 button,
-#cercle_nav_slider > ul.nav_elt.historique > li:last-child,
-#batiment_gestion,
-#liste_stocks .logement_minimap {
+#dc-agenda-panel,
+#dc-agenda-panel .dc-day-modal,
+#dc-agenda-toggle,
+#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#dc-agenda-panel textarea,
+#dc-agenda-panel select,
+#dc-agenda-panel .dc-add-form select option,
+form .longSelectInputOptions .enabled,
+form .mediumSelectInputOptions .enabled,
+form .variableSelectInputOptions .enabled,
+.turn_rank {
     background: var(--couleur-background) !important;
 }
-
-ul.comments {
-    border-left-color: var(--couleur-background) !important;
-}
-
-textarea[name^="comment_histo_"] {
-    border-left: 10px solid var(--couleur-background) !important;
-}
-
 .content:has(> form.message_nouveau),
 #db_crier_message.dataBox,
 #db_changement_infos_entreprise,
@@ -542,335 +699,6 @@ textarea[name^="comment_histo_"] {
 .dataBox .reduce {
     background-color: var(--couleur-background) !important;
 }
-
-/* ==============================
-   AJUSTEMENTS DIVERS
-============================== */
-
-.case_objet,
-#zone_messagerie #display_messagerie,
-#zone_carnet .btnTxt,
-#zone_messagerie .btnTxt,
-#zone_carnet .infoAide,
-#zone_chat #onglets_chat li.selected,
-.quete_tab.btnTxt,
-.quete_aide,
-#db_group_dashboard,
-#dc-carnet-agenda-button-v140 {
-    box-shadow: var(--ombre-neon) !important;
-}
-
-#zone_carnet .btnTxt.selected,
-#zone_carnet .btnTxt:hover,
-#zone_carnet .infoAide:hover,
-#zone_messagerie .btnTxt.selected,
-#zone_messagerie .btnTxt:hover,
-#zone_messagerie #display_messagerie:hover,
-#zone_messagerie #display_messagerie.selected,
-#dc-carnet-agenda-button-v140:hover,
-#dc-carnet-agenda-button-v140.selected {
-    box-shadow: var(--ombre-neon-sombre) !important;
-}
-
-.btn_message_gradient {
-    box-shadow: none !important;
-}
-
-#dc-carnet-agenda-panel-v140,
-#dc-carnet-agenda-modal-v140 .dc-agenda-modal-box,
-#dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box {
-    background: #1c1c1c !important;
-}
-
-#acc_carte {
-    box-shadow: none !important;
-}
-
-.evilBox {
-    background: #04040421;
-}
-
-.zone_conteneurs_displayed .conteneur .conteneur_content {
-    border-color: var(--couleur-bordure-sombre);
-}
-
-textarea[name^="comment_histo_"] {
-    border: none !important;
-}
-
-.inventaire_content #statsInventaire,
-.dataBox.dbtype1,
-#stockInventaire.selected {
-    background: none !important;
-}
-
-#dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
-    background: rgb(255 255 255 / 11%);
-}
-
-#zone_rewardBox .label,
-#zone_rewardBox .competences {
-    background: none;
-}
-
-#zone_chat .more,
-.btnTxt {
-    box-shadow: none;
-}
-
-#ciseauxInventaire,
-#poubelleInventaire {
-    width: 7%;
-}
-
-#statsInventaire,
-#stockInventaire {
-    left: 88% !important;
-}
-
-#zone_fiche #txt_pseudo,
-#quete_titre_texte {
-    font-family: var(--police-interface);
-    font-size: 1rem;
-}
-
-.quete_aide {
-    top: 15px;
-    left: -90px;
-    margin: 6px 0;
-    padding: 2px 4px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-}
-
-[data-tab="quete_missions"],
-[data-tab="quete_accomplissements"] {
-    top: 7px;
-    left: -25px;
-}
-
-#combat_menu > div:hover > svg,
-#zone_actions > div:hover > svg {
-    border: 1px solid #fff !important;
-    background: #E3E3E3 !important;
-}
-
-div[id^="db_message_"] .contenu,
-div[id^="db_message_"] div[id^="convers_"],
-#zone_dataBox .livreRP .livremessage,
-#liste_prisonniers td {
-    background: rgba(0, 0, 0, 0.3) none !important;
-}
-
-.dataBox .message .zone_conversation .conversation .ligne1 {
-    color: #fff;
-}
-
-/* ==============================================================
-   COMPATIBILITÉ : AGENDA PERSO DE MIKA (v2.1-solo)
-   Les variables sont pilotées par Thème Horny.
-   Ce bloc surcharge uniquement l'apparence de l'Agenda.
-   =============================================================== */
-
-/* Fenêtre, typographie et panneau de consultation */
-#dc-agenda-panel,
-#dc-agenda-panel .dc-day-modal {
-    background: var(--couleur-background) !important;
-    color: var(--couleur-tertiaire) !important;
-    font-family: var(--police-interface) !important;
-}
-#dc-agenda-panel {
-    border: 1px solid var(--couleur-primaire) !important;
-    box-shadow: var(--ombre-neon) !important;
-}
-#dc-agenda-topbar,
-#dc-agenda-tabs {
-    background: var(--couleur-secondaire) !important;
-    border-bottom: 1px solid var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-panel-section,
-#dc-agenda-panel .dc-import-row {
-    border-bottom-color: var(--couleur-primaire) !important;
-}
-
-/* Bouton flottant */
-#dc-agenda-toggle {
-    background: var(--couleur-background) !important;
-    color: var(--couleur-primaire) !important;
-    border-color: var(--couleur-primaire) !important;
-    box-shadow: var(--ombre-neon) !important;
-    font-family: var(--police-interface) !important;
-}
-#dc-agenda-toggle:hover { box-shadow: var(--ombre-neon-sombre) !important; }
-
-/* Titres, accents, navigation, liens et onglet actif */
-#dc-agenda-topbar b,
-#dc-agenda-panel .dc-tab.active,
-#dc-agenda-panel .dc-cal-title,
-#dc-agenda-panel .dc-cal-nav,
-#dc-agenda-panel .dc-day-modal-back,
-#dc-agenda-panel .dc-day-modal-title,
-#dc-agenda-panel .dc-evt-title,
-#dc-agenda-panel .dc-evt-share-btn,
-#dc-agenda-panel .dc-panel-section h4,
-#dc-agenda-panel .dc-todo-note-btn.has-note,
-#dc-agenda-panel .dc-todo-footer span.link,
-#dc-agenda-panel .dc-status-msg,
-#dc-agenda-panel #select-export-filter-clear {
-    color: var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-tab.active { border-bottom-color: var(--couleur-primaire) !important; }
-#dc-agenda-panel .dc-tab:hover,
-#dc-agenda-panel .dc-tab:not(.active),
-#dc-agenda-close,
-#dc-agenda-panel .dc-cal-toolbar,
-#dc-agenda-panel .dc-cal-today-btn,
-#dc-agenda-panel .dc-upcoming-title,
-#dc-agenda-panel .dc-cal-weekdays span,
-#dc-agenda-panel .dc-upcoming-empty,
-#dc-agenda-panel .dc-empty,
-#dc-agenda-panel .dc-todo-footer,
-#dc-agenda-panel .dc-todo-handle,
-#dc-agenda-panel .dc-todo-note-btn,
-#dc-agenda-panel .dc-panel-section p,
-#dc-agenda-panel .dc-evt-note,
-#dc-agenda-panel .dc-todo-note-text,
-#dc-agenda-panel .dc-day-num,
-#dc-agenda-panel .dc-evt-field b {
-    color: var(--couleur-tertiaire) !important;
-}
-
-/* Surfaces des cellules, cartes, formulaires et actions */
-#dc-agenda-panel .dc-day-cell,
-#dc-agenda-panel .dc-add-form,
-#dc-agenda-panel .dc-cal-nav,
-#dc-agenda-panel .dc-cal-today-btn,
-#dc-agenda-panel .dc-add-btn,
-#dc-agenda-panel .dc-btn.secondary,
-#dc-agenda-panel .dc-file-label,
-.dc-agenda-share-btn {
-    background: var(--couleur-secondaire) !important;
-}
-#dc-agenda-panel .dc-day-cell:hover,
-#dc-agenda-panel .dc-day-cell.today {
-    border-color: var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-day-cell.today {
-    background: var(--couleur-secondaire) !important;
-    box-shadow: inset 0 0 0 1px var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-upcoming-row:hover,
-#dc-agenda-panel .dc-cal-nav:hover,
-#dc-agenda-panel .dc-cal-today-btn:hover,
-#dc-agenda-panel .dc-add-btn:hover,
-#dc-agenda-panel .dc-btn.secondary:hover,
-#dc-agenda-panel .dc-file-label:hover,
-.dc-agenda-share-btn:hover {
-    background: var(--couleur-secondaire) !important;
-    box-shadow: inset 0 0 5px var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-add-form,
-#dc-agenda-panel .dc-cal-nav,
-#dc-agenda-panel .dc-cal-today-btn,
-#dc-agenda-panel .dc-btn.secondary,
-#dc-agenda-panel .dc-file-label {
-    border-color: var(--couleur-primaire) !important;
-}
-/* Les bordures de gauche colorées sont définies directement par Agenda perso.
-   Ne pas les surcharger : elles identifient les catégories. */
-
-/* Champs de saisie et menus déroulants */
-#dc-agenda-panel input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
-#dc-agenda-panel textarea,
-#dc-agenda-panel select {
-    background: var(--couleur-background) !important;
-    color: var(--couleur-tertiaire) !important;
-    border: 1px solid var(--couleur-primaire) !important;
-    accent-color: var(--couleur-primaire) !important;
-}
-#dc-agenda-panel input::placeholder,
-#dc-agenda-panel textarea::placeholder { color: var(--couleur-tertiaire) !important; opacity: .55; }
-#dc-agenda-panel input[type="checkbox"],
-#dc-agenda-panel input[type="radio"] { accent-color: var(--couleur-primaire) !important; }
-#dc-agenda-panel .dc-add-form select option { background: var(--couleur-background) !important; color: var(--couleur-tertiaire) !important; }
-
-/* Boutons et actions */
-#dc-agenda-panel .dc-add-btn,
-.dc-agenda-share-btn {
-    border-color: var(--couleur-primaire) !important;
-    color: var(--couleur-primaire) !important;
-}
-#dc-agenda-panel .dc-btn:not(.secondary),
-#dc-agenda-panel .dc-add-form button,
-#dc-agenda-panel .dc-todo-form button {
-    background: var(--couleur-primaire) !important;
-    color: var(--couleur-background) !important;
-}
-#dc-agenda-panel .dc-btn:not(.secondary):hover,
-#dc-agenda-panel .dc-add-form button:hover,
-#dc-agenda-panel .dc-todo-form button:hover { filter: brightness(1.12); }
-#dc-agenda-panel .dc-btn.secondary,
-#dc-agenda-panel .dc-file-label { color: var(--couleur-tertiaire) !important; }
-#dc-agenda-panel .dc-badge-local {
-    background: var(--couleur-secondaire) !important;
-    color: var(--couleur-primaire) !important;
-    border-color: var(--couleur-primaire) !important;
-}
-
-/* Bouton de partage dans les messages du forum */
-.dc-agenda-share-btn { font-family: var(--police-interface) !important; }
-.dc-agenda-share-btn.added { color: var(--couleur-tertiaire) !important; opacity: .7; }
-
-/* Les pastilles de catégories, les dates et les boutons de suppression
-   gardent volontairement leurs couleurs propres. */
-#dc-agenda-panel .dc-evt-card,
-#dc-agenda-panel .dc-todo-item {
-    border-top-color: var(--couleur-primaire) !important;
-    border-right-color: var(--couleur-primaire) !important;
-    border-bottom-color: var(--couleur-primaire) !important;
-}
-
-/* ==============================================================
-   COMPATIBILITÉ : AITL MÉMOIRE (v1.3.2)
-   Palette pilotée par les variables du Thème Horny.
-   À placer après les autres règles pour surcharger le thème AITL.
-   Les balises [couleur=...] et couleurs de contenu volontairement
-   choisies par les joueurs ne sont pas modifiées.
-   ============================================================== */
-
-/* Palette dérivée : modifiable indépendamment si nécessaire */
-:root {
-    --aitl-fond: var(--couleur-background);
-    --aitl-panneau: var(--couleur-background);
-    --aitl-entete: var(--couleur-secondaire);
-    --aitl-menu: var(--couleur-secondaire);
-    --aitl-menu-survol: var(--couleur-primaire);
-    --aitl-texte: var(--couleur-tertiaire);
-    --aitl-lien: var(--couleur-primaire);
-    --aitl-bordure: var(--couleur-bordure-sombre);
-    --aitl-champ: var(--couleur-background);
-    --aitl-bouton: var(--couleur-secondaire);
-    --aitl-bouton-survol: var(--couleur-primaire);
-}
-
-/* Fenêtre principale : conserver les motifs et reflets de Mémoire */
-#zone_dataBox .aitl,
-.dataBox .aitl {
-    color: var(--aitl-texte) !important;
-    font-family: var(--police-interface);
-    background:
-        radial-gradient(circle at 15% 20%, rgba(255,255,255,.045), transparent 28%),
-        radial-gradient(circle at 85% 75%, color-mix(in srgb, var(--couleur-primaire) 18%, transparent), transparent 35%),
-        repeating-linear-gradient(135deg, rgba(255,255,255,.018) 0 1px, transparent 1px 7px),
-        var(--aitl-fond) !important;
-}
-#zone_dataBox .aitl::before,
-.dataBox .aitl::before {
-    border-color: var(--aitl-bordure) !important;
-}
-
-/* Panneaux et zones de contenu */
 #zone_dataBox .aitl .navigation,
 #zone_dataBox .aitl .actions,
 #zone_dataBox .aitl .principal,
@@ -881,109 +709,10 @@ div[id^="db_message_"] div[id^="convers_"],
 .dataBox .aitl .principal,
 .dataBox .aitl .principal .in,
 .dataBox .aitl .aitl_page {
-    background:
-        linear-gradient(180deg, rgba(255,255,255,.055), transparent 38%),
-        repeating-linear-gradient(90deg, rgba(255,255,255,.020) 0 1px, transparent 1px 5px),
-        repeating-linear-gradient(0deg, rgba(0,0,0,.07) 0 1px, transparent 1px 6px),
-        var(--aitl-panneau) !important;
-    color: var(--aitl-texte) !important;
-}
-#zone_dataBox .aitl .principal .texte,
-.dataBox .aitl .principal .texte {
-    color: var(--aitl-texte) !important;
-}
-
-/* En-têtes */
-#zone_dataBox .aitl .navigation > .titre,
-#zone_dataBox .aitl .actions > .titre,
-#zone_dataBox .aitl .aitl_page > .titre,
-#zone_dataBox .aitl .aitl_page.annonce > .titre,
-.dataBox .aitl .navigation > .titre,
-.dataBox .aitl .actions > .titre,
-.dataBox .aitl .aitl_page > .titre,
-.dataBox .aitl .aitl_page.annonce > .titre {
-    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-entete) !important;
-    color: var(--aitl-texte) !important;
-    border-color: var(--couleur-primaire) !important;
-}
-#zone_dataBox .aitl .aitl_page.annonce .texte .titre,
-.dataBox .aitl .aitl_page.annonce .texte .titre {
-    background: transparent !important;
-    color: var(--aitl-texte) !important;
-}
-
-/* Navigation et survol */
-#zone_dataBox .aitl .menu,
-.dataBox .aitl .menu {
-    background: linear-gradient(180deg, rgba(255,255,255,.045), transparent 55%), var(--aitl-menu) !important;
-    color: var(--aitl-texte) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,.055), transparent 38%), repeating-linear-gradient(90deg, rgba(255,255,255,.020) 0 1px, transparent 1px 5px), repeating-linear-gradient(0deg, rgba(0,0,0,.07) 0 1px, transparent 1px 6px), var(--aitl-panneau) !important;
 }
 #zone_dataBox .aitl .menu:hover,
-.dataBox .aitl .menu:hover {
-    background: linear-gradient(180deg, rgba(255,255,255,.08), transparent 55%), var(--aitl-menu-survol) !important;
-    color: var(--aitl-fond) !important;
-}
-
-/* Liens automatiques et liens natifs */
-#zone_dataBox .aitl a,
-#zone_dataBox .aitl .link,
-#zone_dataBox .aitl .aitl-auto-link,
-.dataBox .aitl a,
-.dataBox .aitl .link,
-.dataBox .aitl .aitl-auto-link {
-    color: var(--aitl-lien) !important;
-}
-
-/* Champs de saisie : annonces et offres */
-#zone_dataBox .aitl input,
-#zone_dataBox .aitl textarea,
-#zone_dataBox .aitl select,
-.dataBox .aitl input,
-.dataBox .aitl textarea,
-.dataBox .aitl select {
-    background: var(--aitl-champ) !important;
-    color: var(--aitl-texte) !important;
-    border-color: var(--couleur-primaire) !important;
-    accent-color: var(--couleur-primaire);
-}
-#zone_dataBox .aitl input::placeholder,
-#zone_dataBox .aitl textarea::placeholder,
-.dataBox .aitl input::placeholder,
-.dataBox .aitl textarea::placeholder {
-    color: var(--aitl-texte) !important;
-    opacity: .6;
-}
-/* Le script Mémoire impose le blanc sur certains champs spécifiques. */
-#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"],
-#zone_dataBox .aitl .aitl_page.nouvelle_annonce [id^="nouvelle_annonce_titre_"] *,
-#zone_dataBox .aitl .aitl_page.nouvelle_annonce .nouvelle_annonce_texte textarea,
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"],
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_quantite_"] *,
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"],
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_prix_"] *,
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"],
-#zone_dataBox .aitl .aitl_page.pilule_new [id^="nouvelle_pilule_nom_"] * {
-    color: var(--aitl-texte) !important;
-}
-
-/* Boutons : création, validation, offres, balises */
-#zone_dataBox .aitl button,
-#zone_dataBox .aitl input[type="button"],
-#zone_dataBox .aitl input[type="submit"],
-#zone_dataBox .aitl .bigValidInput,
-#zone_dataBox .aitl .aitl-submit-inline .bigValidInput,
-#zone_dataBox .aitl .bigValidInput.aitl-fixed-valid,
-#zone_dataBox .aitl .aitl_page.pilule_new .bigValidInput,
-#zone_dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button,
-.dataBox .aitl button,
-.dataBox .aitl input[type="button"],
-.dataBox .aitl input[type="submit"],
-.dataBox .aitl .bigValidInput,
-.dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button {
-    background: var(--aitl-bouton) !important;
-    color: var(--aitl-texte) !important;
-    border-color: var(--couleur-primaire) !important;
-}
+.dataBox .aitl .menu:hover,
 #zone_dataBox .aitl button:hover,
 #zone_dataBox .aitl input[type="button"]:hover,
 #zone_dataBox .aitl input[type="submit"]:hover,
@@ -995,16 +724,389 @@ div[id^="db_message_"] div[id^="convers_"],
 .dataBox .aitl button:hover,
 .dataBox .aitl .bigValidInput:hover,
 .dataBox .aitl .aitl_page.nouvelle_annonce #baliseButtons button:hover {
-    background: var(--aitl-bouton-survol) !important;
     color: var(--aitl-fond) !important;
 }
-
-/* Prévisualisation : les couleurs des balises restent prioritaires */
+#zone_dataBox .aitl input,
+#zone_dataBox .aitl textarea,
+#zone_dataBox .aitl select,
+.dataBox .aitl input,
+.dataBox .aitl textarea,
+.dataBox .aitl select,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox,
 .dataBox .aitl .aitl_page.nouvelle_annonce .previewBox {
     background: var(--aitl-champ) !important;
-    color: var(--aitl-texte) !important;
-    border-color: var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-track,
+.dataBox .aitl .aitl_page::-webkit-scrollbar-track {
+    background: var(--aitl-fond) !important;
+}
+
+/* BORDURES ET OMBRES */
+.dataBox .close,
+.dataBox .reduce {
+    box-shadow: 0 2rem 1rem -1rem inset var(--couleur-primaire) !important;
+}
+#acc_carte_content {
+    box-shadow: 15px 15px 75px inset var(--couleur-primaire), -15px -15px 75px inset var(--couleur-primaire) !important;
+}
+.dataBox .close,
+.dataBox .reduce {
+    box-shadow: 0 2rem 1rem .5rem inset var(--couleur-primaire);
+}
+ul.comments {
+    border-left-color: var(--couleur-background) !important;
+}
+textarea[name^="comment_histo_"] {
+    border-left: 10px solid var(--couleur-background) !important;
+}
+.case_objet,
+#zone_messagerie #display_messagerie,
+#zone_carnet .btnTxt,
+#zone_messagerie .btnTxt,
+#zone_carnet .infoAide,
+#zone_chat #onglets_chat li.selected,
+.quete_tab.btnTxt,
+.quete_aide,
+#db_group_dashboard,
+#dc-carnet-agenda-button-v140,
+#dc-agenda-panel,
+#dc-agenda-toggle {
+    box-shadow: var(--ombre-neon) !important;
+}
+#zone_carnet .btnTxt.selected,
+#zone_carnet .btnTxt:hover,
+#zone_carnet .infoAide:hover,
+#zone_messagerie .btnTxt.selected,
+#zone_messagerie .btnTxt:hover,
+#zone_messagerie #display_messagerie:hover,
+#zone_messagerie #display_messagerie.selected,
+#dc-carnet-agenda-button-v140:hover,
+#dc-carnet-agenda-button-v140.selected,
+#dc-agenda-toggle:hover {
+    box-shadow: var(--ombre-neon-sombre) !important;
+}
+.btn_message_gradient,
+#acc_carte,
+body#ingame #zone_dataBox .dataBox.dataBox,
+body#ingame #zone_dataBox .dataBox.dataBox.focused,
+body#ingame .dataBox.dataBox.dataBox,
+#dc-fpl-modal.dc-fpl-modal {
+    box-shadow: none !important;
+}
+.zone_conteneurs_displayed .conteneur .conteneur_content {
+    border-color: var(--couleur-bordure-sombre);
+}
+textarea[name^="comment_histo_"] {
+    border: none !important;
+}
+#zone_chat .more,
+.btnTxt {
+    box-shadow: none;
+}
+#combat_menu > div:hover > svg,
+#zone_actions > div:hover > svg {
+    border: 1px solid #fff !important;
+}
+#dc-agenda-panel .dc-day-cell.today {
+    box-shadow: inset 0 0 0 1px var(--couleur-primaire) !important;
+}
+#dc-agenda-panel .dc-upcoming-row:hover,
+#dc-agenda-panel .dc-cal-nav:hover,
+#dc-agenda-panel .dc-cal-today-btn:hover,
+#dc-agenda-panel .dc-add-btn:hover,
+#dc-agenda-panel .dc-btn.secondary:hover,
+#dc-agenda-panel .dc-file-label:hover,
+.dc-agenda-share-btn:hover {
+    box-shadow: inset 0 0 5px var(--couleur-primaire) !important;
+}
+#zone_dataBox .aitl::before,
+.dataBox .aitl::before {
+    border-color: var(--aitl-bordure) !important;
+}
+#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-thumb,
+.dataBox .aitl .aitl_page::-webkit-scrollbar-thumb {
+    border-color: var(--aitl-fond) !important;
+}
+
+/* FILTRES */
+#zone_travail .icon,
+#zone_chat .icon,
+#critere_selection .taille1,
+form .counter,
+form .bigValidInput,
+.stat_icone_soif,
+.stat_icone_faim,
+.stat_icone_cr,
+#infos_menu .book-place.selected .icon,
+#infos_menu .book-place:hover .icon,
+#zone_lightBox .lightBox .annuler,
+form div.cible .left,
+form div.sujet .left,
+#critere_selection td.selected,
+#critere_selection td:hover,
+#acc_groupe_1,
+#atelier_form .retour,
+#atelier_form .valider.link,
+#zone_rewardBox .footer .close,
+form .mediumSelectInput .right {
+    filter: var(--filtre-icones) !important;
+}
+#fondVille1,
+#fondVille2,
+#fondVille3,
+#fondVille4,
+#fondMaison1,
+#fondMaison2,
+#fondMaison3,
+#fondImmeuble1,
+#fondImmeuble2,
+#fondImmeuble3,
+#fondMort,
+#fondOI,
+#fondEntreprise,
+#fondVide,
+#fondSouterrain {
+    filter: var(--filtre-fonds) !important;
+}
+#dc-agenda-panel .dc-btn:not(.secondary):hover,
+#dc-agenda-panel .dc-add-form button:hover,
+#dc-agenda-panel .dc-todo-form button:hover {
+    filter: brightness(1.12);
+}
+#db_gestion_poste_entreprise #zone_postes .poste :is(.decor1, .decor2, .decor3),
+body#ingame .deck_type_3::before,
+form div.cible .left,
+form div.sujet .left {
+    filter: var(--filtre-icones, none) !important;
+}
+
+/* IMAGES ET DÉCORS */
+#zone_quete {
+    background: var(--img-quete) 0 0 / contain no-repeat;
+}
+#modif_stocks_form {
+    background: var(--img-stock) 0 0 no-repeat;
+}
+#loader {
+    background-image: var(--img-loader) !important;
+}
+#zone_chat_bg {
+    background: var(--img-chat) !important;
+}
+#zone_droite > .grid > .grid.top {
+    background: var(--img-zone-droite) 0 0 / contain no-repeat;
+}
+#zone_gauche_inventaire {
+    background: var(--img-inventaire) 0 0 / contain no-repeat;
+}
+.hologram img {
+    content: var(--img-hologramme);
+}
+#liste_stocks .stock {
+    background: url(https://i.imgur.com/Oj3vEKj.png) 0 0 no-repeat;
+}
+#atelier_form {
+    background: url(https://i.imgur.com/0emEAAm.png) 0 0 no-repeat;
+}
+body#ingame .deck_type_3::before {
+    background: url("https://www.dreadcast.net/images/fr/design/box9_fond_0.png") 0 0 repeat;
+}
+form div.cible .left,
+form div.sujet .left {
+    background-image: var(--dc-img-champtexte-bords, url("https://www.dreadcast.net/images/fr/design/champtexte_bords.png")) !important;
+}
+
+/* TYPOGRAPHIE */
+#zone_gauche_inventaire {
+    font: .7rem Arial, sans-serif;
+}
+#zone_fiche #txt_pseudo,
+#quete_titre_texte,
+#zone_dataBox .aitl,
+.dataBox .aitl {
+    font-family: var(--police-interface);
+}
+#dc-agenda-panel,
+#dc-agenda-panel .dc-day-modal,
+#dc-agenda-toggle,
+.dc-agenda-share-btn {
+    font-family: var(--police-interface) !important;
+}
+body#ingame,
+body#ingame :is(input, textarea, select, option, button),
+body#ingame :is(p, a, label, li, td, th, h1, h2, h3, h4, h5, h6, blockquote, pre, small, strong, em, b, i),
+body#ingame :is(.dataBox, .zone_conversation, .conversation, .message, .contenu, .ligne1, .ligne2, .titre, .description) {
+    font-family: var(--police-interface, Geneva, Verdana, sans-serif) !important;
+}
+
+/* AJUSTEMENTS */
+#zone_quete,
+#modif_stocks_form,
+body#ingame .deck_type_3::before {
+    position: absolute;
+}
+#zone_quete {
+    bottom: -13%;
+}
+#zone_quete {
+    left: 2%;
+}
+#zone_quete {
+    width: 100%;
+}
+#zone_quete {
+    height: 18%;
+}
+#zone_quete {
+    padding: 12% 0 0 49%;
+}
+#zone_quete {
+    box-sizing: border-box;
+}
+#zone_quete {
+    line-height: 1.4rem;
+}
+#zone_quete {
+    font-size: min(1.1rem, 14px);
+}
+#modif_stocks_form {
+    top: -80px;
+}
+#modif_stocks_form {
+    left: 48px;
+}
+#modif_stocks_form {
+    width: 519px;
+}
+#modif_stocks_form {
+    height: 546px;
+}
+#zone_chat_bg {
+    background-size: cover !important;
+}
+#zone_droite > .grid > .grid.top,
+body#ingame .deck_type_3 {
+    position: relative;
+}
+#zone_droite > .grid > .grid.top,
+#zone_gauche_inventaire {
+    height: 100%;
+}
+#zone_droite > .grid > .grid.top {
+    max-height: 100%;
+}
+#zone_droite > .grid > .grid.top {
+    display: grid;
+}
+#zone_droite > .grid > .grid.top {
+    grid-template-columns: 48% 50%;
+}
+#zone_droite > .grid > .grid.top {
+    grid-gap: 2%;
+}
+#zone_gauche_inventaire {
+    text-transform: uppercase;
+}
+#zone_rewardBox .header {
+    background: var(--dc-img-reward-box-background) 0 0 no-repeat !important;
+}
+#zone_rewardBox .main {
+    background: var(--dc-img-reward-box-background) -870px 0 repeat-y !important;
+}
+#zone_rewardBox .footer {
+    background: var(--dc-img-reward-box-background) -435px 0 no-repeat !important;
+}
+#zone_rewardBox .competences .icone {
+    background-image: var(--dc-img-reward-box-icons) !important;
+}
+#dc-carnet-agenda-panel-v140,
+#dc-carnet-agenda-modal-v140 .dc-agenda-modal-box,
+#dc-carnet-agenda-day-modal-v140 .dc-agenda-modal-box {
+    background: #1c1c1c !important;
+}
+.evilBox {
+    background: #04040421;
+}
+.inventaire_content #statsInventaire,
+.dataBox.dbtype1,
+#stockInventaire.selected,
+body#ingame .deck_type_3 {
+    background: none !important;
+}
+#dc-carnet-agenda-panel-v140 .dc-agenda-day:hover {
+    background: rgb(255 255 255 / 11%);
+}
+#zone_rewardBox .label,
+#zone_rewardBox .competences {
+    background: none;
+}
+#ciseauxInventaire,
+#poubelleInventaire {
+    width: 7%;
+}
+#statsInventaire,
+#stockInventaire {
+    left: 88% !important;
+}
+#zone_fiche #txt_pseudo,
+#quete_titre_texte {
+    font-size: 1rem;
+}
+.quete_aide {
+    top: 15px;
+}
+.quete_aide {
+    left: -90px;
+}
+.quete_aide {
+    margin: 6px 0;
+}
+.quete_aide {
+    padding: 2px 4px;
+}
+.quete_aide {
+    font-weight: 700;
+}
+.quete_aide {
+    text-align: center;
+}
+.quete_aide {
+    cursor: pointer;
+}
+[data-tab="quete_missions"],
+[data-tab="quete_accomplissements"] {
+    top: 7px;
+}
+[data-tab="quete_missions"],
+[data-tab="quete_accomplissements"] {
+    left: -25px;
+}
+#combat_menu > div:hover > svg,
+#zone_actions > div:hover > svg {
+    background: #E3E3E3 !important;
+}
+div[id^="db_message_"] .contenu,
+div[id^="db_message_"] div[id^="convers_"],
+#zone_dataBox .livreRP .livremessage,
+#liste_prisonniers td {
+    background: rgba(0, 0, 0, 0.3) none !important;
+}
+#dc-agenda-panel input::placeholder,
+#dc-agenda-panel textarea::placeholder {
+    opacity: .55;
+}
+.dc-agenda-share-btn.added {
+    opacity: .7;
+}
+#zone_dataBox .aitl .aitl_page.annonce .texte .titre,
+.dataBox .aitl .aitl_page.annonce .texte .titre {
+    background: transparent !important;
+}
+#zone_dataBox .aitl input::placeholder,
+#zone_dataBox .aitl textarea::placeholder,
+.dataBox .aitl input::placeholder,
+.dataBox .aitl textarea::placeholder {
+    opacity: .6;
 }
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox b,
 #zone_dataBox .aitl .aitl_page.nouvelle_annonce .previewBox i,
@@ -1014,127 +1116,54 @@ div[id^="db_message_"] div[id^="convers_"],
 .dataBox .aitl .aitl_page.nouvelle_annonce .previewBox i {
     color: inherit;
 }
-
-/* Barres de défilement */
-#zone_dataBox .aitl .aitl_page,
-.dataBox .aitl .aitl_page {
-    scrollbar-color: var(--couleur-primaire) var(--aitl-fond) !important;
-}
-#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-track,
-.dataBox .aitl .aitl_page::-webkit-scrollbar-track {
-    background: var(--aitl-fond) !important;
-}
-#zone_dataBox .aitl .aitl_page::-webkit-scrollbar-thumb,
-.dataBox .aitl .aitl_page::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(255,255,255,.18), rgba(0,0,0,.20)), var(--couleur-primaire) !important;
-    border-color: var(--aitl-fond) !important;
-}
-
-/* Les images et leurs proportions sont gérées par AITL Mémoire. */
-
-/* Corporation/Décès : en-têtes et survol des lignes */
-#zone_dataBox .aitl .table_entete td.type1 {
-    border-bottom: 1px solid var(--couleur-primaire) !important;
-    color: var(--couleur-primaire) !important;
-}
-
-#zone_dataBox .aitl .table_entete td.selected,
-#zone_dataBox .aitl .table_entete tr:hover {
-    border-top: 1px solid var(--couleur-primaire) !important;
-    border-bottom: 1px solid var(--couleur-primaire) !important;
-    color: var(--couleur-primaire) !important;
-}
-
-
-/* ==============================================================
-   THÈME HORNY — Gestion / Options et decks
-   ============================================================= */
-
-/* Onglets Gestion et Options : état normal et sélectionné. */
-#entreprise_selecteur #selecteur_gestion:not(.selected) > .label,
-#entreprise_selecteur #selecteur_options:not(.selected) > .label {
-    color: var(--couleur-background) !important;
-}
-#entreprise_selecteur #selecteur_gestion.selected > .label,
-#entreprise_selecteur #selecteur_options.selected > .label {
-    color: var(--couleur-primaire) !important;
-}
-
-/* Barres vertes des rôles : filtrer l'image, sans recolorer le texte.
-   Le sélecteur est limité aux décors utilisant l'image native indiquée. */
-#db_gestion_poste_entreprise #zone_postes .poste :is(.decor1, .decor2, .decor3) {
-    filter: var(--filtre-icones, none) !important;
-}
-
-/* Deck de type 4 : dégradé piloté par la palette du thème. */
-body#ingame .deck_type_4 {
-    background: linear-gradient(
-        180deg,
-        var(--couleur-background) 0%,
-        var(--couleur-secondaire) 25%,
-        var(--couleur-primaire) 50%,
-        var(--couleur-secondaire) 75%,
-        var(--couleur-background) 100%
-    ) !important;
-}
-
-/* Deck de type 3 : l'image native est isolée dans un calque filtré.
-   Le filtre n'affecte ni les textes ni les champs du deck. */
 body#ingame .deck_type_3 {
-    position: relative;
     isolation: isolate;
-    background: none !important;
 }
 body#ingame .deck_type_3::before {
     content: "";
-    position: absolute;
+}
+body#ingame .deck_type_3::before {
     inset: 0;
+}
+body#ingame .deck_type_3::before {
     z-index: -1;
-    background: url("https://www.dreadcast.net/images/fr/design/box9_fond_0.png") 0 0 repeat;
-    filter: var(--filtre-icones, none) !important;
+}
+body#ingame .deck_type_3::before {
     pointer-events: none;
 }
-
-/* ==============================================================
-   v1.7.7 — Infobulles de rôles et listes de licenciement
-   ============================================================== */
-
-/* Infobulles des rôles : libellés en couleur primaire */
-.infoBox .info_job .type1 {
-    color: var(--couleur-primaire) !important;
-}
-
-/* Texte des options des listes déroulantes. */
-form .longSelectInputOptions .enabled,
-form .mediumSelectInputOptions .enabled,
-form .variableSelectInputOptions .enabled {
-    background: var(--couleur-background) !important;
-}
-
-/* Bandeau déroulant des Paramètres */
 #ingame #bandeau ul.menus li ul {
     height: auto !important;
+}
+#ingame #bandeau ul.menus li ul {
     max-height: none !important;
+}
+#ingame #bandeau ul.menus li ul {
     min-height: 0 !important;
+}
+#ingame #bandeau ul.menus li ul {
     background: #000 !important;
+}
+#ingame #bandeau ul.menus li ul {
     background-color: #000 !important;
+}
+#ingame #bandeau ul.menus li ul {
     overflow: visible !important;
 }
-
-/* Fenêtres : suppression des halos, sans toucher aux ombres des boutons et icônes. */
-body#ingame #zone_dataBox .dataBox.dataBox,
-body#ingame #zone_dataBox .dataBox.dataBox.focused,
-body#ingame .dataBox.dataBox.dataBox,
-#dc-fpl-modal.dc-fpl-modal {
-    box-shadow: none !important;
-}
-
-/* ==============================
-   COULEUR ALERTE — ICÔNE MESSAGERIE
-   Cible uniquement l’enveloppe de notification.
-============================== */
-
 #zone_messagerie .icon.red svg,
 .icon.red[onclick*="display_messagerie"] svg {
     fill: var(--couleur-alerte, #d9534f) !important;
+}
+form div.cible .left,
+form div.sujet .left {
+    width: 70px !important;
+}
+form div.cible .left,
+form div.sujet .left {
+    background-repeat: no-repeat !important;
+}
+form div.cible .left {
+    background-position: 0 0 !important;
+}
+form div.sujet .left {
+    background-position: 0 -23px !important;
 }
